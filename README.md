@@ -9,8 +9,5 @@ Although in the past the goal was to commercialize Malavoria, I decided over the
 
 The project is still under development.
 
-For more details: 
-
+For more details about the LICENSE: 
 [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-[MidJourney](https://midjourney.com)
