@@ -354,12 +354,20 @@ section {
 
 .dice {
     font-size: 20px;
-    align: center;
 }
 
 .dicet {
     font-size: 20px;
-    align: center;
+}
+
+.card-text {
+    font-size: 12px;
+    font-family: Calibri;
+}
+
+.memory {
+    font-family: AmaticSC;
+    font-size: 60px;
 }
 
 /*--------------------------------------------------------------
