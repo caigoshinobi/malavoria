@@ -5,7 +5,7 @@ Malavoria is a project that began in 2017. The idea was to create a simple role-
  
 In the past the goal was to commercialize Malavoria, but I decided over the years to finalize and release it under Creative Commons BY-NC-SA 4.0 license (waiting for the ORC). Images are generated using AI and released under Creative Commons BY-NC 4.0 License too.
 
-The project is still under development.
+The project is **still under development**.
 
 For details about the LICENSE, please visit:
 [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
