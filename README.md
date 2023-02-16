@@ -11,6 +11,6 @@ The project is still under development.
 
 For more details: 
 
-[https://creativecommons.org/](https://creativecommons.org/choose/?lang=en)
+[Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[https://midjourney.com](https://midjourney.com)
+[MidJourney](https://midjourney.com)
