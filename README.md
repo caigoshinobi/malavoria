@@ -9,3 +9,5 @@ The project is still under development.
 
 For details about the LICENSE, please visit:
 [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Malavoria Website: [malavoria.com](https://malavoria.com)
