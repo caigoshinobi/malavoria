@@ -12,6 +12,9 @@ On this page I collect all the graphic studies for the manual and some updates. 
 The project is still under development.
 
 For more details: 
+
 [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
 [https://creativecommons.org/choose/?lang=en](https://creativecommons.org/choose/?lang=en)
+
 [https://midjourney.com](https://midjourney.com)
