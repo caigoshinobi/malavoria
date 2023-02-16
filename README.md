@@ -1,4 +1,4 @@
-# Malavoria OTTRPG
+# Malavoria TTRPG
 ## Open Tabletop Roleplaying Game
 
 Malavoria is a project that began in 2017. The idea was to create a simple role-playing game different from usual, fast-paced and with unusual characters. Due to lack of time it was abandoned for a few years, although the game mechanics and setting was practically finished. 
