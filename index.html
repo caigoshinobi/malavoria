@@ -22,36 +22,46 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none d-print-none"></i>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <header id="header" class="d-print-none">
+	  <div class="d-flex flex-column">
 
-      <div class="profile">
-        <img src="assets/img/logo_white.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">MALAVORIA</a></h1>
-        <div class="social-links mt-3 text-center">
-          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-          <!-- <a #href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-          <a href="https://www.instagram.com/malavoria/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/caigoshinobi/malavoria" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.paypal.com/donate/?hosted_button_id=4SARELNKLD6TL" class="paypal"><i class="bx bxl-paypal"></i></a>
-		  <a onclick=shareMalavoria()><i class="bx bx-share-alt"></i></a>
-        </div>
-      </div>
+		  <div class="profile">
+			  <img src="assets/img/logo_white.png" alt="" class="img-fluid rounded-circle">
+			  <h1 class="text-light"><a href="index.html">MALAVORIA</a></h1>
+			  <div class="social-links mt-3 text-center">
+				  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+				  <!-- <a #href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+				  <a href="https://www.instagram.com/malavoria/" class="instagram"><i class="bx bxl-instagram"></i></a>
+				  <a href="https://github.com/caigoshinobi/malavoria" class="github"><i class="bx bxl-github"></i></a>
+				  <a href="https://www.paypal.com/donate/?hosted_button_id=4SARELNKLD6TL" class="paypal"><i class="bx bxl-paypal"></i></a>
+				  <a onclick=shareMalavoria()><i class="bx bx-share-alt"></i></a>
+			  </div>
+		  </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
-          <li><a href="#intro" class="nav-link scrollto"><i class="bx bxs-heart"></i> <span>Introduzione</span></a></li>
-          <li><a href="#identikit" class="nav-link scrollto"><i class="bx bx-show"></i> <span>Identikit di un omuncolo</span></a></li>
-          <li><a href="#creation" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Creazione</span></a></li>
-          <li><a href="#mechanics" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Meccanica di gioco</span></a></li>
-          <li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
+		  
+
+
+
+		  <nav id="navbar" class="nav-menu navbar">
+			  <ul>
+				  <li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
+				  <li><a href="#intro" class="nav-link scrollto"><i class="bx bxs-heart"></i> <span>Introduzione</span></a></li>
+				  <li><a href="#identikit" class="nav-link scrollto"><i class="bx bx-show"></i> <span>Identikit di un omuncolo</span></a></li>
+				  <li><a href="#creation" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Creazione</span></a></li>
+				  <li><a href="#mechanics" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Meccanica di gioco</span></a></li>
+				  <li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
+			  </ul>
+
+				  <button onclick="window.print();return false;" id="print" type="button" class="btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal">
+					  STAMPA IN PDF
+				  </button>
+
+
+		  </nav><!-- .nav-menu -->
+	  </div>
   </header><!-- End Header -->
 
 
@@ -229,7 +239,7 @@
 					  <p>Da una zuppa.</p>
 					  <p>In gergo, prende il nome di <b>Minestrone della Nascita</b>.</p>
 					  <p>È la sorgente di vita generosamente elargita dallo <b>stregone</b>, il confortevole liquido amniotico da dove tutti loro sono nati.</p>
-					  <p>In realtà più che una zuppa è un grande vaso di compost semi-solido, puzzolente e mutageno. Un’immensa discarica di scarti alimentari, animali e di arredamento miscelati magicamente a puntino da <b>Malavoria</b>.</p>
+					  <p>Più che una zuppa è un grande vaso di compost semi-solido, puzzolente e mutageno. Un’immensa discarica di scarti alimentari, animali e di arredamento miscelati magicamente a puntino da <b>Malavoria</b>.</p>
 				  </div>
 				  <div class="col-sm">
 					  <p>Durante la <b>Cerimonia della Vita</b>, che si tiene ogni volta che lo <b>stregone</b> fa pulizie di primavera, ai bordi del <b>Minestrone</b> si assiepano tutti gli <b>omuncoli</b>. Questi hanno il compito di pescare i nuovi creati con appositi rampini (chi ha le braccia per farlo ovviamente) costruiti appositamente nei secoli.</p>
@@ -268,68 +278,52 @@
 			  <div class="row">
 				  <div class="col-sm">
 					  <h3>Ricordi</h3>
-					  <p>Cosa ricorda?</p>
-					  <p>Un bel niente.</p>
-				  </div>
-				  <div class="col-sm">
+					  <p>Cosa ricorda? Un bel niente</p>
 					  <p>Solitamente ha qualche flash della sua morte e delle sue origini, quindi si fa un sacco di domande al quale non può rispondere.</p>
-					  <p>Un’anima imprigionata, in generale, non è in grado di ricordare il suo passato senza un piccolo aiuto.</p>
 				  </div>
 				  <div class="col-sm">
-					  <p>Se il <b>Custode</b> lo desidera, attraverso le prossime tabelle è possibile ricostruire gli ultimi traumi del tuo <b>omuncolo</b>.</p>
+					  <p>Un’anima imprigionata, in generale, non è in grado di ricordare il suo passato senza un piccolo aiuto.</p>
+					  <p>Se il <b>Custode</b> lo desidera, utilizzando il pulsante <b>Genera ricordo</b> è possibile riscontruire gli ultimi traumi del nostro <b>omuncolo</b>.</p>
+				  </div>
+				  <div class="col-sm">
+					  <p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti sulle prossime pagine.</p>
 				  </div>
 			  </div>
 			  <div class="row">
-				  <div class="col-sm-8">
+				  <div class="col-sm">
 					  <img src="assets/img/identikit3.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm-4">
-					  <h4>I. Tipo di umanoide (tira 1 dado)</h4>
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col">#</th>
-								  <th scope="col">Sei un...</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Umano</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Nano</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Elfo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Fata</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Gnomo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Stregone</td>
-							  </tr>
-						  </tbody>
-					  </table>
 				  </div>
 			  </div>
 		  </div>
 	  </section>
 
-	  <hr />
+	  <!-- Button generateMemories modal -->
+	  <button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
+		  Genera memorie
+	  </button>
+	  <!-- generateMemories Modal -->
+	  <div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			  <div class="modal-content">
+				  <div class="modal-header">
+					  <h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
+					  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+				  </div>
+				  <div id="generateMemoriesBody" class="modal-body">
+
+				  </div>
+				  <div class="modal-footer">
+					  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <!-- End generateMemories Modal -->
 
 	  <section id="identikit" class="identikit">
 		  <div class="container">
 
-			  <h4>II. Professione (Tira 2 dadi)</h4>
+			  <h4>I. Chi era? (Tira 2 dadi)</h4>
 
 			  <div class="row">
 				  <div class="col-sm">
@@ -445,7 +439,7 @@
 						  <thead>
 							  <tr>
 								  <th scope="col"><i class='dicet bx bx-dice-4'></i></th>
-								  <th scope="col">Fata</th>
+								  <th scope="col">Folletto</th>
 							  </tr>
 						  </thead>
 						  <tbody>
@@ -560,7 +554,7 @@
 			  <div class="row">
 				  <div class="col-sm">
 
-					  <h4>III. Cause della morte (tira 1 dado)</h4>
+					  <h4>II. Cause della morte (tira 1 dado)</h4>
 					  <table class="table table-sm table-striped">
 						  <thead>
 							  <tr>
@@ -608,6 +602,235 @@
 	  </section>
 
 
+	  <hr />
+
+	  <section id="identikit" class="identikit">
+		  <div class="container">
+
+			  <h4>IV. Chi è stato? (Tira 2 dadi)</h4>
+
+			  <div class="row">
+				  <div class="col-sm">
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-1'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Uno stregone</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Una porta</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Una bestia feroce</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Una pianta</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Un sasso</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>Sé stesso</td>
+							  </tr>
+						  </tbody>
+					  </table>
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-2'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Un avventuriero</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Una trappola</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Un soldato</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Un omuncolo</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Una montagna</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>Un albero</td>
+							  </tr>
+						  </tbody>
+					  </table>
+				  </div>
+				  <div class="col-sm">
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-3'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Un amico</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Un bicchiere</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Un incantesimo</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Una malattia</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Una canzone</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>Un'amica</td>
+							  </tr>
+						  </tbody>
+					  </table>
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-4'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Un collega</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Un parente</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Un lago</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Un insetto</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Un forziere</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>Una statua</td>
+							  </tr>
+						  </tbody>
+					  </table>
+				  </div>
+				  <div class="col-sm">
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-5'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Un vestito</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Una mappa</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Un cespuglio</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Un frutto</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Un eroe</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>Un artefatto</td>
+							  </tr>
+						  </tbody>
+					  </table>
+
+					  <table class="table table-sm table-striped">
+						  <thead>
+							  <tr>
+								  <th scope="col"><i class='dicet bx bx-dice-6'></i></th>
+								  <th scope="col"></th>
+							  </tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+								  <td>Una bestia magica</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+								  <td>Una strega</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+								  <td>Un demone</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+								  <td>Una pozione</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+								  <td>Un animaletto</td>
+							  </tr>
+							  <tr>
+								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+								  <td>La morte</td>
+							  </tr>
+						  </tbody>
+					  </table>
+				  </div>
+			  </div>
+
+		  </div>
+	  </section>
+
 	  <!-- Button StoryOne modal -->
 	  <button type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
 		  Apri ricordo
@@ -623,7 +846,7 @@
 				  </div>
 				  <div class="modal-body">
 					  <p>
-						  Antar è il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
+						  Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
 					  </p>
 					  <p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
 					  <p>“Dove dice Padrone che loro sono?”</p>
