@@ -41,10 +41,6 @@
 			  </div>
 		  </div>
 
-		  
-
-
-
 		  <nav id="navbar" class="nav-menu navbar">
 			  <ul>
 				  <li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
@@ -89,7 +85,7 @@
 	  <!-- ======= intro Section ======= -->
 
 
-	  <section id="intro" class="intro">
+	  <section id="intro" class="intro d-flex flex-column">
 		  <div class="container">
 
 			  <div class="section-title">
@@ -120,7 +116,7 @@
 
 	  <hr>
 
-	  <section id="intro" class="intro">
+	  <section id="intro" class="intro d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm-6">
@@ -144,7 +140,7 @@
 
 	  <hr>
 
-	  <section id="intro" class="intro">
+	  <section id="intro" class="intro d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
@@ -177,7 +173,7 @@
 
 	  <hr>
 
-	  <section id="intro" class="intro">
+	  <section id="intro" class="intro d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
@@ -208,7 +204,7 @@
 
 	  <!-- identikit Section -->
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm-3">
@@ -225,7 +221,7 @@
 
 	  <hr>
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
@@ -252,8 +248,8 @@
 
 	  <hr>
 
-	  <section id="identikit" class="identikit">
-		  <div class="container">
+	  <section id="identikit" class="identikit d-flex flex-column">
+		  <div class="container d-flex flex-column">
 			  <div class="row">
 				  <div class="col-sm-4">
 					  <h3>Cosa lo anima?</h3>
@@ -273,7 +269,7 @@
 
 	  <hr>
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
@@ -298,29 +294,31 @@
 	  </section>
 
 	  <!-- Button generateMemories modal -->
-	  <button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
-		  Genera memorie
-	  </button>
-	  <!-- generateMemories Modal -->
-	  <div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-			  <div class="modal-content">
-				  <div class="modal-header">
-					  <h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
-					  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-				  </div>
-				  <div id="generateMemoriesBody" class="modal-body">
+	  <section class="d-print-none">
+		  <button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
+			  Genera memorie
+		  </button>
+		  <!-- generateMemories Modal -->
+		  <div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				  <div class="modal-content">
+					  <div class="modal-header">
+						  <h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
+						  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div id="generateMemoriesBody" class="modal-body">
 
-				  </div>
-				  <div class="modal-footer">
-					  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+					  </div>
+					  <div class="modal-footer">
+						  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+					  </div>
 				  </div>
 			  </div>
 		  </div>
-	  </div>
+	  </section>
 	  <!-- End generateMemories Modal -->
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 
 			  <h4>I. Chi era? (Tira 2 dadi)</h4>
@@ -549,7 +547,7 @@
 
 	  <hr>
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
@@ -604,7 +602,7 @@
 
 	  <hr />
 
-	  <section id="identikit" class="identikit">
+	  <section id="identikit" class="identikit d-flex flex-column">
 		  <div class="container">
 
 			  <h4>IV. Chi è stato? (Tira 2 dadi)</h4>
@@ -832,40 +830,45 @@
 	  </section>
 
 	  <!-- Button StoryOne modal -->
-	  <button type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
-		  Apri ricordo
-	  </button>
+	  <section class="d-print-none">
+		  <button type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
+			  Apri ricordo
+		  </button>
 
-	  <!-- StoryOne Modal -->
-	  <div class="modal fade" id="storyOne" tabindex="-1" aria-labelledby="storyOneLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-			  <div class="modal-content">
-				  <div class="modal-header">
-					  <h3 class="modal-title" id="storyOneLabel">Fine coi fiocchi</h3>
-					  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-				  </div>
-				  <div class="modal-body">
-					  <p>
-						  Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
-					  </p>
-					  <p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
-					  <p>“Dove dice Padrone che loro sono?”</p>
-					  <p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</p>
-					  <p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
-					  <p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
-					  <p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
-					  <p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
-					  <p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
-					  <p>“Per gli Dei...”</p>
-					  <p>Urla isteriche pervadono l’oscurità.</p>
-				  </div>
-				  <div class="modal-footer">
-					  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+		  <!-- StoryOne Modal -->
+		  <div class="modal fade" id="storyOne" tabindex="-1" aria-labelledby="storyOneLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				  <div class="modal-content">
+					  <div class="modal-header">
+						  <h3 class="modal-title" id="storyOneLabel">Fine coi fiocchi</h3>
+						  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="modal-body">
+						  <p>
+							  Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
+						  </p>
+						  <p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
+						  <p>“Dove dice Padrone che loro sono?”</p>
+						  <p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</p>
+						  <p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
+						  <p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
+						  <p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
+						  <p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
+						  <p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
+						  <p>“Per gli Dei...”</p>
+						  <p>Urla isteriche pervadono l’oscurità.</p>
+					  </div>
+					  <div class="modal-footer">
+						  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+					  </div>
 				  </div>
 			  </div>
 		  </div>
-	  </div>
+	  </section>
 	  <!-- End StoryOne Modal -->
+
+
+
 	  <!-- End identikit Section -->
 	  <!-- ======= creation Section ======= -->
 	  <section id="creation" class="creation section-bg">
