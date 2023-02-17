@@ -53,8 +53,8 @@
 				  <li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
 			  </ul>
 
-				  <button onclick="window.print();return false;" id="print" type="button" class="btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal">
-					  STAMPA IN PDF
+				  <button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark btn-lg col-12" data-bs-toggle="modal">
+					  Stampa
 				  </button>
 
 
@@ -279,16 +279,17 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
-					  <h3>Ricordi</h3>
+					  <h3>Memorie</h3>
 					  <p>Cosa ricorda? Un bel niente</p>
 					  <p>Solitamente ha qualche flash della sua morte e delle sue origini, quindi si fa un sacco di domande al quale non può rispondere.</p>
 				  </div>
 				  <div class="col-sm">
 					  <p>Un’anima imprigionata, in generale, non è in grado di ricordare il suo passato senza un piccolo aiuto.</p>
-					  <p>Se il <b>Custode</b> lo desidera, utilizzando il pulsante <b>Genera ricordo</b> è possibile riscontruire gli ultimi traumi del nostro <b>omuncolo</b>.</p>
+					  <p>Se il <b>Custode</b> lo desidera, è possibile ricostruire gli ultimi traumi del nostro <b>omuncolo</b> utilizzando il pulsante <b>Genera memoria</b> qui sotto.</p>
 				  </div>
 				  <div class="col-sm">
-					  <p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti sulle prossime pagine.</p>
+					  <p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti nelle prossime pagine e tirare qualche dado.</p>
+					  <p>Ad ogni <b>omuncolo</b> in gioco dovrebbe essere assegnata questa memoria. Poi sta al <b>Custode</b> decidere se renderle note fin da subito o in un particolare momento del gioco.</p>
 				  </div>
 			  </div>
 			  <div class="row">
@@ -304,7 +305,7 @@
 	  <!-- Button generateMemories modal -->
 	  <section class="d-print-none">
 		  <button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
-			  Genera memorie
+			  Genera memoria
 		  </button>
 		  <!-- generateMemories Modal -->
 		  <div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
@@ -318,7 +319,7 @@
 
 					  </div>
 					  <div class="modal-footer">
-						  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+						  <button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
 					  </div>
 				  </div>
 			  </div>
@@ -840,8 +841,8 @@
 
 	  <!-- Button StoryOne modal -->
 	  <section class="d-print-none">
-		  <button type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
-			  Apri ricordo
+		  <button type="button" class="genButton btn btn-dark rounded-0 col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
+			  <i class='bx bxs-book-open'></i>
 		  </button>
 
 		  <!-- StoryOne Modal -->
@@ -849,7 +850,7 @@
 			  <div class="modal-dialog">
 				  <div class="modal-content">
 					  <div class="modal-header">
-						  <h3 class="modal-title" id="storyOneLabel">Fine coi fiocchi</h3>
+						  <h3 class="modal-title" id="storyOneLabel">Ricordo: Fine coi fiocchi</h3>
 						  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
 					  </div>
 					  <div class="modal-body">
@@ -868,7 +869,7 @@
 						  <p>Urla isteriche pervadono l’oscurità.</p>
 					  </div>
 					  <div class="modal-footer">
-						  <button type="button" class="btn btn-dark rounded-sm" data-bs-dismiss="modal">Close</button>
+						  <button type="button" class="genButton btn btn-dark rounded-sm col-12" data-bs-dismiss="modal">Close</button>
 					  </div>
 				  </div>
 			  </div>
@@ -882,9 +883,14 @@
 	  <section id="creation" class="creation d-flex flex-column">
 		  <div class="container d-flex flex-column">
 			  <div class="row">
-				  <div class="col-sm">
-
-				  </div>
+					  <div class="col-sm-3">
+					  </div>
+					  <div class="col-sm-6">
+						  <img src="assets/img/creazione_main.jpg" class="img-responsive center-block img-fluid" />
+						  <h2 class="text-center">Creazione</h2>
+					  </div>
+					  <div class="col-sm-3">
+					  </div>
 			  </div>
 		  </div>
 	  </section>
@@ -895,6 +901,26 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-sm">
+					  <p>
+						  Un’<b>omuncolo</b> è per definizione un essere spregevole creato dallo <b>stregone</b> ed è composto da svariati oggetti cuciti e inchiodati in malo modo tra loro. Non ha un’anatomia definita, tutto dipende da cosa gli è stato innestato al momento della <b>Creazione</b>.
+					  </p>
+					  <p>
+						  Ogni <b>giocatore</b> stabilirà casualmente le <b>parti del corpo</b> del suo <b>omuncolo</b>. Quest’ultime andranno a determinare i suoi punteggi di <b>caratteristica</b>.
+					  </p>
+					  <h3>Caratteristiche</h3>
+					  <p>Le <b>caratteristiche</b> definiscono le capacità del nostro <b>omuncolo</b> e sono essenziali per risolvere <b>scontri</b> e <b>prove</b>.</p>
+					  <p>Ognuna possiede tanti punti quante sono le <b>parti del corpo</b> associate a quella <b>caratteristica</b>.</p>
+				  </div>
+				  <div class="col-sm">
+					  <img src="assets/img/creazione1.jpg" class="img-responsive center-block img-fluid" />
+				  </div>
+				  <div class="col-sm">
+					  <h4>Forza (FOR)</h4>
+					  <p>La <b>Forza</b> stabilisce il peso di un <b>omuncolo</b> e quanto egli può sollevare e lanciare. L’utilizzo di questa <b>caratteristica</b> implica che l’<b>caratteristica</b> sfrutta lo sforzo fisico e la sua brutalità per la risoluzione della <b>prova</b>.</p>
+					  <h4>Mente (MEN)</h4>
+					  <p>La <b>Mente</b> stabilisce l’intelligenza dell’<b>omuncolo</b>. Più un <b>omuncolo</b> è intelligente, più è in grado di praticare a dovere l’<b>Alchimia</b>. Inoltre, ragionare ogni tanto è più semplice che schiantare le proprie corna sulle pareti.</p>
+					  <h4>Agilità (AGI></h4>
+					  <p>L’<b>Agilità</b> stabilisce quanto l’<b>omuncolo</b> è rapido e veloce. Una <b>prova</b> di <b>Agilità</b> può essere utile per evitare trappole e eseguire manovre acrobatiche.</p>
 				  </div>
 			  </div>
 		  </div>
