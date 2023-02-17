@@ -23,961 +23,1120 @@
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none d-print-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-print-none">
-	  <div class="d-flex flex-column">
-
-		  <div class="profile">
-			  <img src="assets/img/logo_white.png" alt="" class="img-fluid rounded-circle">
-			  <h1 class="text-light"><a href="index.html">MALAVORIA</a></h1>
-			  <div class="social-links mt-3 text-center">
-				  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-				  <!-- <a #href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-				  <a href="https://www.instagram.com/malavoria/" class="instagram"><i class="bx bxl-instagram"></i></a>
-				  <a href="https://github.com/caigoshinobi/malavoria" class="github"><i class="bx bxl-github"></i></a>
-				  <a href="https://www.paypal.com/donate/?hosted_button_id=4SARELNKLD6TL" class="paypal"><i class="bx bxl-paypal"></i></a>
-				  <a onclick=shareMalavoria()><i class="bx bx-share-alt"></i></a>
-			  </div>
-		  </div>
-
-		  <nav id="navbar" class="nav-menu navbar">
-			  <ul>
-				  <li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
-				  <li><a href="#intro" class="nav-link scrollto"><i class="bx bxs-heart"></i> <span>Introduzione</span></a></li>
-				  <li><a href="#identikit" class="nav-link scrollto"><i class="bx bx-show"></i> <span>Identikit di un omuncolo</span></a></li>
-				  <li><a href="#creation" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Creazione</span></a></li>
-				  <li><a href="#mechanics" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Meccanica di gioco</span></a></li>
-				  <li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
-			  </ul>
-
-				  <button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark btn-lg col-12" data-bs-toggle="modal">
-					  Stampa
-				  </button>
-
-
-		  </nav><!-- .nav-menu -->
-	  </div>
-  </header><!-- End Header -->
-
-
-  <main id="main">
-
-	  <!-- ======= Hero Section ======= -->
-	  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm-3">
-				  </div>
-				  <div class="col-sm-6">
-					  <img src="assets/img/home_dev.jpg" class="img-responsive center-block img-fluid" />
-					  <h1 class="text-center">Malavoria</h1>
-					  <h3 class="text-center">Mostri che fanno cose</h3>
-				  </div>
-				  <div class="col-sm-3">
-				  </div>
-			  </div>
-		  </div>
-	  </section><!-- End Hero -->
-	  <hr>
-
-
-
-	  <!-- ======= intro Section ======= -->
-
-
-	  <section id="intro" class="intro d-flex flex-column">
-		  <div class="container">
-
-			  <div class="section-title">
-				  <h1>Introduzione</h1>
-			  </div>
-			  <div class="row">
-				  <div class="col-sm">
-					  <p>Parliamo di eroi.</p>
-					  <p>L’eroe <b>fantasy</b>. Alto, lunghi capelli biondi, armatura lucente e faccia da schiaffi.</p>
-					  <p>Una prima analisi ci rivela uno spirito violento, una mezza dozzina di denunce per violazione della proprietà privata, il più delle volte alcolista e con una compagnia di tagliagole  tutt’altro che raccomandabile.</p>
-					  <p><i>Ma studiamo la cosa più da vicino.</i></p>
-					  <p>Ha la brutale abitudine, un po’ boomer, di farsi una tacca sulla spada per ogni nemico abbattuto.</p>
-					  <p>Gli chiedi di raccogliere la dichiarazione di un contadino e torna dopo un mese senza soldi, con un’armatura  rubata, le teste di un minotauro, di un orco e del contadino in un sacco e 6 livelli in più.</p>
-				  </div>
-				  <div class="col-sm">
-					  <p>Non ha nessun riguardo per i civili. Lo ribadiamo, anche se sottinteso nel punto precedente. Avesse la possibilità di far saltare in aria un distretto per far fuori l’acerrimo nemico, non ci penserebbe due volte.</p>
-					  <p>Appena vede un paio di esserini alti mezzo metro, più brutti degli altri, li assale con cinque compagni armati fino ai denti. Un massacro.</p>
-					  <p><i>Voi direte, che ci frega?</i></p>
-					  <p>Abbiamo voluto dedicare questo libro a tutte le anime straziate, derubate e derise da questi avanzi di galera. Anime con una storia semplice ma con vita breve.</p>
-					  <p><b>Malavoria</b> è la loro vendetta.</p>
-				  </div>
-				  <div class="col-sm">
-					  <img src="assets/img/logo_white.png" class="img-responsive center-block img-fluid" />
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="intro" class="intro d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm-6">
-					  <img src="assets/img/intro1.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm-6">
-					  <h2>Cos'è Malavoria?</h2>
-					  <p><b>Malavoria</b> è ovunque</p>
-					  <p>È la più potente maledizione concepita da uno stregone, una maledizione in grado di donare la vita.</p>
-					  <p>Tutti gli stregoni capaci di richiamare <b>Malavoria</b> utilizzano il suo potere per circondarsi di docili servitori, schiavi delle loro cause.</p>
-					  <p>Tra questi servitori ci sono gli <b>omuncoli</b>, protagonisti di questo gioco!</p>
-					  <p>Sono formati dai più svariati materiali, che vanno da rami e fogliame a ferro e liquami… tutti gli scarti di un laboratorio alchemico insomma, durante le pulizie si tira fuori un sacco di roba inutile.</p>
-					  <p>Ad assemblaggio ultimato, vengono risvegliati dallo stregone in persona e messi al lavoro.</p>
-					  <p><b>Malavoria</b> non crea burattini, bensì fornisce agli oggetti un’anima.</p>
-					  <p>Di certo quest’anima non appartiene all’oscuro stregone e non è cosa rara che alcuni omuncoli si ribellino al loro triste destino…</p>
-					  <p>…e sì, finisce sempre male.</p>
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-	  <div class="pagebreak"></div>
-
-	  <section id="intro" class="intro d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-					  <h2>Cosa serve per giocare?</h2>
-					  <p>Nel caso questo sia il vostro primo gioco di ruolo, questo capitolo servirà a colmare eventuali lacune. Andremo a vedere insieme quale ruolo ricoprono i <b>giocatori</b> e il <b>Custode</b>, così da permettervi di prendere le prime decisioni.</p>
-					  <h3>Il Custode</h3>
-					  <p>In Malavoria, come prima cosa si sceglie un <b>Custode</b>. Il <b>Custode</b> è colui che insegna le regole agli altri <b>giocatori</b>, fornisce loro un mondo, una storia e funge da arbitro.</p>
-				  </div>
-				  <div class="col-sm">
-					  <h3>Cosa significa arbitrare il gioco?</h3>
-					  <ul>
-						  <li>Impersonare le creature che i <b>giocatori</b> incontreranno.</li>
-						  <li>Descrivere gli eventi, quello che i personaggi vedono, sentono e annusano.</li>
-						  <li>Tutto questo seguendo le regole riportate in questo manuale.</li>
-					  </ul>
-					  <h4>Pro</h4>
-					  <p>Hai creato un mondo e una storia da far loro giocare, questo ti rende una via di mezzo tra una divinità e il fato. Batti il cinque!<p>
-					  <p>Vedere gli occhi dei giocatori brillare, quando gli piazzi davanti alla geniale fesseria che ti sei inventato, non ha prezzo.</p>
-					  <h4>Contro</h4>
-					  <p>Non giocherai con loro e per gran parte del tempo farai la parte dei loro nemici e dei loro problemi.</p>
-				  </div>
-				  <div class="col-sm">
-					  <p>Qualcuno di loro morirà e per questo ti odieranno.</p>
-					  <p>Devi leggerti questo manuale. Visto che manco l’hai pagato tanto vale provare, no?</p>
-					  <img src="assets/img/intro2.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="intro" class="intro d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-					  <h3>I Giocatori</h3>
-					  <p>Ogni <b>giocatore</b> crea un <b>omuncolo</b> seguendo le regole descritte dal capitolo creazione.</p>
-					  <p>Fatto questo, dovrà interpretare l’<b>omuncolo</b> creato seguendo i racconti del <b>Custode</b> e le regole del gioco.</p>
-					  <img src="assets/img/intro3.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm">
-					  <img src="assets/img/intro4.jpg" class="img-responsive center-block img-fluid" />
-					  <h4>Pro</h4>
-					  <p>Hai creato un <b>omuncolo</b>! Ti affezionerai moltissimo a lui.</p>
-					  <h4>Contro</h4>
-					  <p>Il tuo <b>omuncolo</b> prima o poi morirà e sarai costretto a crearne un altro. Prenditela con il <b>Custode.</b></p>
-				  </div>
-				  <div class="col-sm">
-					  <h3>Accessori</h3>
-					  <p>Ogni <b>giocatore</b> deve avere con sé un foglio, una matita e una gomma, che non guastano mai. Lo stesso vale per il <b>Custode.</b></p>
-					  <p>Infine, per stabilire l’esito di alcune azioni è necessario avere dei <b>dadi a 6 facce</b> Ne potete saccheggiare qualcuno da altri giochi da tavolo che avete in casa. In ogni caso non è difficile trovarli a qualche spicciolo.</p>
-					  <p>Più ne trovate meglio è, in questo gioco si lanciano dadi a manciate. Ci andava così.</p>
-					  <img src="assets/img/intro5.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-	  <div class="pagebreak"></div>
-
-	  <!-- identikit Section -->
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm-3">
-				  </div>
-				  <div class="col-sm-6">
-					  <img src="assets/img/identikit_main.jpg" class="img-responsive center-block img-fluid" />
-					  <h2 class="text-center">Identikit di un omuncolo</h2>
-				  </div>
-				  <div class="col-sm-3">
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-					  <p>Un <b>omuncolo</b> è un mostriciattolo senza un’anatomia definita, fatto di schifezze e animato da una maledizione.</p>
-					  <p>Già questo sembra un problema.</p>
-					  <img src="assets/img/identikit1.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm">
-					  <p>In questo capitolo vedremo come nasce e di chi diavolo è l’anima che porta. Nel <b>Capitolo 3</b> invece vedremo nel dettaglio come fornirgli un aspetto e delle caratteristiche.</p>
-					  <h3>Da dove viene?</h3>
-					  <p>Da una zuppa.</p>
-					  <p>In gergo, prende il nome di <b>Minestrone della Nascita</b>.</p>
-					  <p>È la sorgente di vita generosamente elargita dallo <b>stregone</b>, il confortevole liquido amniotico da dove tutti loro sono nati.</p>
-					  <p>Più che una zuppa è un grande vaso di compost semi-solido, puzzolente e mutageno. Un’immensa discarica di scarti alimentari, animali e di arredamento miscelati magicamente a puntino da <b>Malavoria</b>.</p>
-				  </div>
-				  <div class="col-sm">
-					  <p>Durante la <b>Cerimonia della Vita</b>, che si tiene ogni volta che lo <b>stregone</b> fa pulizie di primavera, ai bordi del <b>Minestrone</b> si assiepano tutti gli <b>omuncoli</b>. Questi hanno il compito di pescare i nuovi creati con appositi rampini (chi ha le braccia per farlo ovviamente) costruiti appositamente nei secoli.</p>
-					  <p>Come rituale, seppur potente, non è dei più affidabili. Soltanto pochi <b>omuncoli</b> ‘vengono bene’ e partecipano alla vita di corte servendo lo <b>stregone</b>. Tutti gli altri vengono scartati e rigettati nel <b>Minestrone</b>, oppure utilizzati come ascensori, fermaporta, orologi a pendolo, sedie, cestini.</p>
-
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-	  <div class="pagebreak"></div>
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container d-flex flex-column">
-			  <div class="row">
-				  <div class="col-sm-4">
-					  <h3>Cosa lo anima?</h3>
-					  <p><b>Malavoria</b> naturalmente.</p>
-					  <p>Ma il discorso potrebbe essere più complesso.</p>
-					  <p>Vedi, l’anima donata all’omuncolo non cade dal cielo. Già esiste, viene solo... trattata e spostata.</p>
-					  <p>Sono anime di avventurieri, in cerca di gloria, di fama, di donne. Anime forti, spezzate  e piegate al volere dei maligni.</p>
-					  <p>Il vecchio proprietario spesso muore tentando di rubare qualcosa dalla dimora dello <b>stregone</b>, oppure è solo l’estrema conclusione di una sua giornata sfortunata.</p>
-					  <p>Il suo cadavere è l’ingrediente principale del rituale!</p>
-				  </div>
-				  <div class="col-sm-8">
-					  <img src="assets/img/identikit2.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-					  <h3>Memorie</h3>
-					  <p>Cosa ricorda? Un bel niente</p>
-					  <p>Solitamente ha qualche flash della sua morte e delle sue origini, quindi si fa un sacco di domande al quale non può rispondere.</p>
-				  </div>
-				  <div class="col-sm">
-					  <p>Un’anima imprigionata, in generale, non è in grado di ricordare il suo passato senza un piccolo aiuto.</p>
-					  <p>Se il <b>Custode</b> lo desidera, è possibile ricostruire gli ultimi traumi del nostro <b>omuncolo</b> utilizzando il pulsante <b>Genera memoria</b> qui sotto.</p>
-				  </div>
-				  <div class="col-sm">
-					  <p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti nelle prossime pagine e tirare qualche dado.</p>
-					  <p>Ad ogni <b>omuncolo</b> in gioco dovrebbe essere assegnata questa memoria. Poi sta al <b>Custode</b> decidere se renderle note fin da subito o in un particolare momento del gioco.</p>
-				  </div>
-			  </div>
-			  <div class="row">
-				  <div class="col-sm">
-					  <img src="assets/img/identikit3.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <div class="pagebreak"></div>
-
-	  <!-- Button generateMemories modal -->
-	  <section class="d-print-none">
-		  <button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
-			  Genera memoria
-		  </button>
-		  <!-- generateMemories Modal -->
-		  <div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-				  <div class="modal-content">
-					  <div class="modal-header">
-						  <h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
-						  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-					  </div>
-					  <div id="generateMemoriesBody" class="modal-body">
-
-					  </div>
-					  <div class="modal-footer">
-						  <button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-	  <!-- End generateMemories Modal -->
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-
-			  <h4>I. Chi era? (Tira 2 dadi)</h4>
-
-			  <div class="row">
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-1'></i></th>
-								  <th scope="col">Umano</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Eroe</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Ladro di reliquie</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Diplomatico</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Commerciante</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Musicista</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Nobile</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-2'></i></th>
-								  <th scope="col">Nano</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Minatore</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Guardia</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Ubriacone</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Fabbro</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Mercenario</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Nobile</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-3'></i></th>
-								  <th scope="col">Elfo</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Ranger</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Messaggero</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Cartografo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Stilista</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Mago</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Ambasciatore</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-4'></i></th>
-								  <th scope="col">Folletto</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Messaggero</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Musicista</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Strega</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Ladro</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Botanico</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Disoccupato</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-5'></i></th>
-								  <th scope="col">Gnomo</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Minatore</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Commerciante</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Ingegnere</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Cuoco</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Orafo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Pilota</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-6'></i></th>
-								  <th scope="col">Stregone</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Guaritore</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Necromante</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Alchimista</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Evocatore</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Cartomante</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Impostore</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-			  </div>
-
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-
-					  <h4>II. Cause della morte (tira 1 dado)</h4>
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col">#</th>
-								  <th scope="col">Ucciso...</th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>A duello</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Per errore</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Assassinato</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>A tradimento</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Avvelenato</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>...e divorato</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-				  </div>
-				  <div class="col-sm">
-					  <img src="assets/img/identikit4.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm">
-
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-
-	  <hr />
-	  <div class="pagebreak"></div>
-
-	  <section id="identikit" class="identikit d-flex flex-column">
-		  <div class="container">
-
-			  <h4>IV. Chi è stato? (Tira 2 dadi)</h4>
-
-			  <div class="row">
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-1'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Uno stregone</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Una porta</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Una bestia feroce</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Una pianta</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Un sasso</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Sé stesso</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-2'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Un avventuriero</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Una trappola</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Un soldato</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Un omuncolo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Una montagna</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Un albero</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-3'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Un amico</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Un bicchiere</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Un incantesimo</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Una malattia</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Una canzone</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Un'amica</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-4'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Un collega</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Un parente</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Un lago</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Un insetto</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Un forziere</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Una statua</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-				  <div class="col-sm">
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-5'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Un vestito</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Una mappa</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Un cespuglio</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Un frutto</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Un eroe</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>Un artefatto</td>
-							  </tr>
-						  </tbody>
-					  </table>
-
-					  <table class="table table-sm table-striped">
-						  <thead>
-							  <tr>
-								  <th scope="col"><i class='dicet bx bx-dice-6'></i></th>
-								  <th scope="col"></th>
-							  </tr>
-						  </thead>
-						  <tbody>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-1'></i></th>
-								  <td>Una bestia magica</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-2'></i></th>
-								  <td>Una strega</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-3'></i></th>
-								  <td>Un demone</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-4'></i></th>
-								  <td>Una pozione</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-5'></i></th>
-								  <td>Un animaletto</td>
-							  </tr>
-							  <tr>
-								  <th scope="row"><i class='dice bx bxs-dice-6'></i></th>
-								  <td>La morte</td>
-							  </tr>
-						  </tbody>
-					  </table>
-				  </div>
-			  </div>
-
-		  </div>
-	  </section>
-
-	  <!-- Button StoryOne modal -->
-	  <section class="d-print-none">
-		  <button type="button" class="genButton btn btn-dark rounded-0 col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
-			  <i class='bx bxs-book-open'></i>
-		  </button>
-
-		  <!-- StoryOne Modal -->
-		  <div class="modal fade" id="storyOne" tabindex="-1" aria-labelledby="storyOneLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-				  <div class="modal-content">
-					  <div class="modal-header">
-						  <h3 class="modal-title" id="storyOneLabel">Ricordo: Fine coi fiocchi</h3>
-						  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-					  </div>
-					  <div class="modal-body">
-						  <p>
-							  Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
-						  </p>
-						  <p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
-						  <p>“Dove dice Padrone che loro sono?”</p>
-						  <p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</p>
-						  <p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
-						  <p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
-						  <p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
-						  <p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
-						  <p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
-						  <p>“Per gli Dei...”</p>
-						  <p>Urla isteriche pervadono l’oscurità.</p>
-					  </div>
-					  <div class="modal-footer">
-						  <button type="button" class="genButton btn btn-dark rounded-sm col-12" data-bs-dismiss="modal">Close</button>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-	  <!-- End StoryOne Modal -->
-	  <!-- End identikit Section -->
-
-	  <div class="pagebreak"></div>
-
-	  <section id="creation" class="creation d-flex flex-column">
-		  <div class="container d-flex flex-column">
-			  <div class="row">
-					  <div class="col-sm-3">
-					  </div>
-					  <div class="col-sm-6">
-						  <img src="assets/img/creazione_main.jpg" class="img-responsive center-block img-fluid" />
-						  <h2 class="text-center">Creazione</h2>
-					  </div>
-					  <div class="col-sm-3">
-					  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <hr>
-
-	  <section id="creation" class="creation d-flex flex-column">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm">
-					  <p>
-						  Un’<b>omuncolo</b> è per definizione un essere spregevole creato dallo <b>stregone</b> ed è composto da svariati oggetti cuciti e inchiodati in malo modo tra loro. Non ha un’anatomia definita, tutto dipende da cosa gli è stato innestato al momento della <b>Creazione</b>.
-					  </p>
-					  <p>
-						  Ogni <b>giocatore</b> stabilirà casualmente le <b>parti del corpo</b> del suo <b>omuncolo</b>. Quest’ultime andranno a determinare i suoi punteggi di <b>caratteristica</b>.
-					  </p>
-					  <h3>Caratteristiche</h3>
-					  <p>Le <b>caratteristiche</b> definiscono le capacità del nostro <b>omuncolo</b> e sono essenziali per risolvere <b>scontri</b> e <b>prove</b>.</p>
-					  <p>Ognuna possiede tanti punti quante sono le <b>parti del corpo</b> associate a quella <b>caratteristica</b>.</p>
-				  </div>
-				  <div class="col-sm">
-					  <img src="assets/img/creazione1.jpg" class="img-responsive center-block img-fluid" />
-				  </div>
-				  <div class="col-sm">
-					  <h4>Forza (FOR)</h4>
-					  <p>La <b>Forza</b> stabilisce il peso di un <b>omuncolo</b> e quanto egli può sollevare e lanciare. L’utilizzo di questa <b>caratteristica</b> implica che l’<b>caratteristica</b> sfrutta lo sforzo fisico e la sua brutalità per la risoluzione della <b>prova</b>.</p>
-					  <h4>Mente (MEN)</h4>
-					  <p>La <b>Mente</b> stabilisce l’intelligenza dell’<b>omuncolo</b>. Più un <b>omuncolo</b> è intelligente, più è in grado di praticare a dovere l’<b>Alchimia</b>. Inoltre, ragionare ogni tanto è più semplice che schiantare le proprie corna sulle pareti.</p>
-					  <h4>Agilità (AGI></h4>
-					  <p>L’<b>Agilità</b> stabilisce quanto l’<b>omuncolo</b> è rapido e veloce. Una <b>prova</b> di <b>Agilità</b> può essere utile per evitare trappole e eseguire manovre acrobatiche.</p>
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-
-	  <div class="pagebreak"></div>
-
-
-	  <!-- ======= creation Section ======= -->
-	  <section id="creation" class="creation section-bg">
-		  <div class="container">
-
-
-
-		  </div>
-	  </section><!-- End creation Section -->
-	  <!-- ======= mechanics Section ======= -->
-	  <section id="mechanics" class="mechanics">
-		  <div class="container">
-
-			  <div class="section-title">
-				  <h2>Meccanica di Gioco</h2>
-				  <p>COMING SOON</p>
-			  </div>
-
-		  </div>
-	  </section><!-- End mechanics Section -->
-	  <!-- ======= alchemy Section ======= -->
-	  <section id="alchemy" class="alchemy">
-		  <div class="container">
-
-			  <div class="section-title">
-				  <h2>Alchimia</h2>
-				  <p>COMING SOON</p>
-			  </div>
-
-		  </div>
-	  </section><!-- End alchemy Section -->
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="credits">
-  
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+	<!-- ======= Mobile nav toggle button ======= -->
+	<i class="bi bi-list mobile-nav-toggle d-xl-none d-print-none"></i>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="d-print-none">
+		<div class="d-flex flex-column">
+
+			<div class="profile">
+				<img src="assets/img/logo_white.png" alt="" class="img-fluid rounded-circle">
+				<h1 class="text-light"><a href="index.html">MALAVORIA</a></h1>
+				<div class="social-links mt-3 text-center">
+					<!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+					<!-- <a #href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+					<a href="https://www.instagram.com/malavoria/" class="instagram"><i class="bx bxl-instagram"></i></a>
+					<a href="https://github.com/caigoshinobi/malavoria" class="github"><i class="bx bxl-github"></i></a>
+					<a href="https://www.paypal.com/donate/?hosted_button_id=4SARELNKLD6TL" class="paypal"><i class="bx bxl-paypal"></i></a>
+					<a onclick=shareMalavoria()><i class="bx bx-share-alt"></i></a>
+				</div>
+			</div>
+
+			<nav id="navbar" class="nav-menu navbar">
+				<ul>
+					<li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
+					<li><a href="#intro" class="nav-link scrollto"><i class="bx bxs-heart"></i> <span>Introduzione</span></a></li>
+					<li><a href="#identikit" class="nav-link scrollto"><i class="bx bx-show"></i> <span>Identikit di un omuncolo</span></a></li>
+					<li><a href="#creation" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Creazione</span></a></li>
+					<li><a href="#mechanics" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Meccanica di gioco</span></a></li>
+					<li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
+				</ul>
+
+				<button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark btn-lg col-12" data-bs-toggle="modal">
+					Stampa
+				</button>
+
+
+			</nav><!-- .nav-menu -->
+		</div>
+	</header><!-- End Header -->
+
+
+	<main id="main">
+
+		<!-- ======= Hero Section ======= -->
+		<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/img/home_dev.jpg" class="img-responsive center-block img-fluid" />
+						<h1 class="text-center">Malavoria</h1>
+						<h3 class="text-center">Mostri che fanno cose</h3>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+		</section><!-- End Hero -->
+		<hr>
+
+
+
+		<!-- ======= intro Section ======= -->
+
+
+		<section id="intro" class="intro d-flex flex-column">
+			<div class="container">
+
+				<div class="section-title">
+					<h1>Introduzione</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<p>Parliamo di eroi.</p>
+						<p>L’eroe <b>fantasy</b>. Alto, lunghi capelli biondi, armatura lucente e faccia da schiaffi.</p>
+						<p>Una prima analisi ci rivela uno spirito violento, una mezza dozzina di denunce per violazione della proprietà privata, il più delle volte alcolista e con una compagnia di tagliagole  tutt’altro che raccomandabile.</p>
+						<p><i>Ma studiamo la cosa più da vicino.</i></p>
+						<p>Ha la brutale abitudine, un po’ boomer, di farsi una tacca sulla spada per ogni nemico abbattuto.</p>
+						<p>Gli chiedi di raccogliere la dichiarazione di un contadino e torna dopo un mese senza soldi, con un’armatura  rubata, le teste di un minotauro, di un orco e del contadino in un sacco e 6 livelli in più.</p>
+					</div>
+					<div class="col-sm">
+						<p>Non ha nessun riguardo per i civili. Lo ribadiamo, anche se sottinteso nel punto precedente. Avesse la possibilità di far saltare in aria un distretto per far fuori l’acerrimo nemico, non ci penserebbe due volte.</p>
+						<p>Appena vede un paio di esserini alti mezzo metro, più brutti degli altri, li assale con cinque compagni armati fino ai denti. Un massacro.</p>
+						<p><i>Voi direte, che ci frega?</i></p>
+						<p>Abbiamo voluto dedicare questo libro a tutte le anime straziate, derubate e derise da questi avanzi di galera. Anime con una storia semplice ma con vita breve.</p>
+						<p><b>Malavoria</b> è la loro vendetta.</p>
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/logo_white.png" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="intro" class="intro d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="assets/img/intro1.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm-6">
+						<h2>Cos'è Malavoria?</h2>
+						<p><b>Malavoria</b> è ovunque</p>
+						<p>È la più potente maledizione concepita da uno stregone, una maledizione in grado di donare la vita.</p>
+						<p>Tutti gli stregoni capaci di richiamare <b>Malavoria</b> utilizzano il suo potere per circondarsi di docili servitori, schiavi delle loro cause.</p>
+						<p>Tra questi servitori ci sono gli <b>omuncoli</b>, protagonisti di questo gioco!</p>
+						<p>Sono formati dai più svariati materiali, che vanno da rami e fogliame a ferro e liquami… tutti gli scarti di un laboratorio alchemico insomma, durante le pulizie si tira fuori un sacco di roba inutile.</p>
+						<p>Ad assemblaggio ultimato, vengono risvegliati dallo stregone in persona e messi al lavoro.</p>
+						<p><b>Malavoria</b> non crea burattini, bensì fornisce agli oggetti un’anima.</p>
+						<p>Di certo quest’anima non appartiene all’oscuro stregone e non è cosa rara che alcuni omuncoli si ribellino al loro triste destino…</p>
+						<p>…e sì, finisce sempre male.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+		<div class="pagebreak"></div>
+
+		<section id="intro" class="intro d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Cosa serve per giocare?</h2>
+						<p>Nel caso questo sia il vostro primo gioco di ruolo, questo capitolo servirà a colmare eventuali lacune. Andremo a vedere insieme quale ruolo ricoprono i <b>giocatori</b> e il <b>Custode</b>, così da permettervi di prendere le prime decisioni.</p>
+						<h3>Il Custode</h3>
+						<p>In Malavoria, come prima cosa si sceglie un <b>Custode</b>. Il <b>Custode</b> è colui che insegna le regole agli altri <b>giocatori</b>, fornisce loro un mondo, una storia e funge da arbitro.</p>
+					</div>
+					<div class="col-sm">
+						<h3>Cosa significa arbitrare il gioco?</h3>
+						<ul>
+							<li>Impersonare le creature che i <b>giocatori</b> incontreranno.</li>
+							<li>Descrivere gli eventi, quello che i personaggi vedono, sentono e annusano.</li>
+							<li>Tutto questo seguendo le regole riportate in questo manuale.</li>
+						</ul>
+						<h4>Pro</h4>
+						<p>Hai creato un mondo e una storia da far loro giocare, questo ti rende una via di mezzo tra una divinità e il fato. Batti il cinque!<p>
+						<p>Vedere gli occhi dei giocatori brillare, quando gli piazzi davanti alla geniale fesseria che ti sei inventato, non ha prezzo.</p>
+						<h4>Contro</h4>
+						<p>Non giocherai con loro e per gran parte del tempo farai la parte dei loro nemici e dei loro problemi.</p>
+					</div>
+					<div class="col-sm">
+						<p>Qualcuno di loro morirà e per questo ti odieranno.</p>
+						<p>Devi leggerti questo manuale. Visto che manco l’hai pagato tanto vale provare, no?</p>
+						<img src="assets/img/intro2.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="intro" class="intro d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h3>I Giocatori</h3>
+						<p>Ogni <b>giocatore</b> crea un <b>omuncolo</b> seguendo le regole descritte dal capitolo creazione.</p>
+						<p>Fatto questo, dovrà interpretare l’<b>omuncolo</b> creato seguendo i racconti del <b>Custode</b> e le regole del gioco.</p>
+						<img src="assets/img/intro3.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/intro4.jpg" class="img-responsive center-block img-fluid" />
+						<h4>Pro</h4>
+						<p>Hai creato un <b>omuncolo</b>! Ti affezionerai moltissimo a lui.</p>
+						<h4>Contro</h4>
+						<p>Il tuo <b>omuncolo</b> prima o poi morirà e sarai costretto a crearne un altro. Prenditela con il <b>Custode.</b></p>
+					</div>
+					<div class="col-sm">
+						<h3>Accessori</h3>
+						<p>Ogni <b>giocatore</b> deve avere con sé un foglio, una matita e una gomma, che non guastano mai. Lo stesso vale per il <b>Custode.</b></p>
+						<p>Infine, per stabilire l’esito di alcune azioni è necessario avere dei <b>dadi a 6 facce</b> Ne potete saccheggiare qualcuno da altri giochi da tavolo che avete in casa. In ogni caso non è difficile trovarli a qualche spicciolo.</p>
+						<p>Più ne trovate meglio è, in questo gioco si lanciano dadi a manciate. Ci andava così.</p>
+						<img src="assets/img/intro5.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+		<div class="pagebreak"></div>
+
+		<!-- identikit Section -->
+
+		<section id="identikit" class="identikit d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/img/identikit_main.jpg" class="img-responsive center-block img-fluid" />
+						<h2 class="text-center">Identikit di un omuncolo</h2>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="identikit" class="identikit d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<p>Un <b>omuncolo</b> è un mostriciattolo senza un’anatomia definita, fatto di schifezze e animato da una maledizione.</p>
+						<p>Già questo sembra un problema.</p>
+						<img src="assets/img/identikit1.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+						<p>In questo capitolo vedremo come nasce e di chi diavolo è l’anima che porta. Nel <b>Capitolo 3</b> invece vedremo nel dettaglio come fornirgli un aspetto e delle caratteristiche.</p>
+						<h3>Da dove viene?</h3>
+						<p>Da una zuppa.</p>
+						<p>In gergo, prende il nome di <b>Minestrone della Nascita</b>.</p>
+						<p>È la sorgente di vita generosamente elargita dallo <b>stregone</b>, il confortevole liquido amniotico da dove tutti loro sono nati.</p>
+						<p>Più che una zuppa è un grande vaso di compost semi-solido, puzzolente e mutageno. Un’immensa discarica di scarti alimentari, animali e di arredamento miscelati magicamente a puntino da <b>Malavoria</b>.</p>
+					</div>
+					<div class="col-sm">
+						<p>Durante la <b>Cerimonia della Vita</b>, che si tiene ogni volta che lo <b>stregone</b> fa pulizie di primavera, ai bordi del <b>Minestrone</b> si assiepano tutti gli <b>omuncoli</b>. Questi hanno il compito di pescare i nuovi creati con appositi rampini (chi ha le braccia per farlo ovviamente) costruiti appositamente nei secoli.</p>
+						<p>Come rituale, seppur potente, non è dei più affidabili. Soltanto pochi <b>omuncoli</b> ‘vengono bene’ e partecipano alla vita di corte servendo lo <b>stregone</b>. Tutti gli altri vengono scartati e rigettati nel <b>Minestrone</b>, oppure utilizzati come ascensori, fermaporta, orologi a pendolo, sedie, cestini.</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+		<div class="pagebreak"></div>
+
+		<section id="identikit" class="identikit d-flex flex-column">
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Cosa lo anima?</h3>
+						<p><b>Malavoria</b> naturalmente.</p>
+						<p>Ma il discorso potrebbe essere più complesso.</p>
+						<p>Vedi, l’anima donata all’omuncolo non cade dal cielo. Già esiste, viene solo... trattata e spostata.</p>
+						<p>Sono anime di avventurieri, in cerca di gloria, di fama, di donne. Anime forti, spezzate  e piegate al volere dei maligni.</p>
+						<p>Il vecchio proprietario spesso muore tentando di rubare qualcosa dalla dimora dello <b>stregone</b>, oppure è solo l’estrema conclusione di una sua giornata sfortunata.</p>
+						<p>Il suo cadavere è l’ingrediente principale del rituale!</p>
+					</div>
+					<div class="col-sm-8">
+						<img src="assets/img/identikit2.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="identikit" class="identikit d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h3>Memorie</h3>
+						<p>Cosa ricorda? Un bel niente</p>
+						<p>Solitamente ha qualche flash della sua morte e delle sue origini, quindi si fa un sacco di domande al quale non può rispondere.</p>
+					</div>
+					<div class="col-sm">
+						<p>Un’anima imprigionata, in generale, non è in grado di ricordare il suo passato senza un piccolo aiuto.</p>
+						<p>Se il <b>Custode</b> lo desidera, è possibile ricostruire gli ultimi traumi del nostro <b>omuncolo</b> utilizzando il pulsante <b>Genera memoria</b> qui sotto.</p>
+					</div>
+					<div class="col-sm">
+						<p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti nelle prossime pagine e tirare qualche dado.</p>
+						<p>Ad ogni <b>omuncolo</b> in gioco dovrebbe essere assegnata questa memoria. Poi sta al <b>Custode</b> decidere se renderle note fin da subito o in un particolare momento del gioco.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm">
+						<img src="assets/img/identikit3.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="pagebreak"></div>
+
+		<!-- Button generateMemories modal -->
+		<section class="d-print-none">
+			<button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
+				Genera memoria
+			</button>
+			<!-- generateMemories Modal -->
+			<div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
+							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="generateMemoriesBody" class="modal-body">
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End generateMemories Modal -->
+
+		<section id="identikit" class="identikit d-flex flex-column">
+			<div class="container">
+
+				<h4>I. Chi era? (Tira 2 dadi)</h4>
+
+				<div class="row">
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-1'></i></th>
+									<th scope="col">Umano</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Eroe</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Ladro di reliquie</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Diplomatico</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Commerciante</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Musicista</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Nobile</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-2'></i></th>
+									<th scope="col">Nano</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Minatore</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Guardia</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Ubriacone</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Fabbro</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Mercenario</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Nobile</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-3'></i></th>
+									<th scope="col">Elfo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Ranger</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Messaggero</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Cartografo</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Stilista</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Mago</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Ambasciatore</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-4'></i></th>
+									<th scope="col">Folletto</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Messaggero</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Musicista</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Strega</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Ladro</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Botanico</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Disoccupato</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-5'></i></th>
+									<th scope="col">Gnomo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Minatore</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Commerciante</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Ingegnere</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Cuoco</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Orafo</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Pilota</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-6'></i></th>
+									<th scope="col">Stregone</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Guaritore</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Necromante</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Alchimista</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Evocatore</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Cartomante</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Impostore</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-sm">
+
+						<h4>II. Cause della morte (tira 1 dado)</h4>
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Ucciso...</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>A duello</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Per errore</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Assassinato</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>A tradimento</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Avvelenato</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>...e divorato</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/identikit4.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+
+					</div>
+				</div>
+
+				<hr />
+
+				<h4>IV. Chi è stato? (Tira 2 dadi)</h4>
+
+				<div class="row">
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-1'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Uno stregone</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Una porta</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Una bestia feroce</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Una pianta</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Un sasso</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Sé stesso</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-2'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Un avventuriero</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Una trappola</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Un soldato</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Un omuncolo</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Una montagna</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Un albero</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-3'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Un amico</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Un bicchiere</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Un incantesimo</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Una malattia</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Una canzone</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Un'amica</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-4'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Un collega</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Un parente</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Un lago</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Un insetto</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Un forziere</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Una statua</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-5'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Un vestito</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Una mappa</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Un cespuglio</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Un frutto</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Un eroe</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>Un artefatto</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col"><i class='dicet bx bx-dice-6'></i></th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i></th>
+									<td>Una bestia magica</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-2'></i></th>
+									<td>Una strega</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i></th>
+									<td>Un demone</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-4'></i></th>
+									<td>Una pozione</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i></th>
+									<td>Un animaletto</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-6'></i></th>
+									<td>La morte</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!--<div class="pagebreak"></div>-->
+		<!-- Button StoryOne modal -->
+		<section class="d-print-none">
+			<button type="button" class="genButton btn btn-dark rounded-0 col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
+				<i class='bx bxs-book-open'></i>
+			</button>
+
+			<!-- StoryOne Modal -->
+			<div class="modal fade" id="storyOne" tabindex="-1" aria-labelledby="storyOneLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="storyOneLabel">Ricordo: Fine coi fiocchi</h3>
+							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p>
+								Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
+							</p>
+							<p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
+							<p>“Dove dice Padrone che loro sono?”</p>
+							<p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</p>
+							<p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
+							<p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
+							<p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
+							<p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
+							<p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
+							<p>“Per gli Dei...”</p>
+							<p>Urla isteriche pervadono l’oscurità.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="genButton btn btn-dark rounded-sm col-12" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End StoryOne Modal -->
+		<!-- End identikit Section -->
+
+		<div class="pagebreak"></div>
+
+		<section id="creation" class="creation d-flex flex-column">
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/img/creazione_main.jpg" class="img-responsive center-block img-fluid" />
+						<h2 class="text-center">Creazione</h2>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="creation" class="creation d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<p>
+							Un’<b>omuncolo</b> è per definizione un essere spregevole creato dallo <b>stregone</b> ed è composto da svariati oggetti cuciti e inchiodati in malo modo tra loro. Non ha un’anatomia definita, tutto dipende da cosa gli è stato innestato al momento della <b>Creazione</b>.
+						</p>
+						<p>
+							Ogni <b>giocatore</b> stabilirà casualmente le <b>parti del corpo</b> del suo <b>omuncolo</b>. Quest’ultime andranno a determinare i suoi punteggi di <b>caratteristica</b>.
+						</p>
+						<h3>Caratteristiche</h3>
+						<p>Le <b>caratteristiche</b> definiscono le capacità del nostro <b>omuncolo</b> e sono essenziali per risolvere <b>scontri</b> e <b>prove</b>.</p>
+						<p>Ognuna possiede tanti punti quante sono le <b>parti del corpo</b> associate a quella <b>caratteristica</b>.</p>
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/creazione1.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+						<h4>Forza (FOR)</h4>
+						<p>La <b>Forza</b> stabilisce il peso di un <b>omuncolo</b> e quanto egli può sollevare e lanciare. L’utilizzo di questa <b>caratteristica</b> implica che l’<b>caratteristica</b> sfrutta lo sforzo fisico e la sua brutalità per la risoluzione della <b>prova</b>.</p>
+						<h4>Mente (MEN)</h4>
+						<p>La <b>Mente</b> stabilisce l’intelligenza dell’<b>omuncolo</b>. Più un <b>omuncolo</b> è intelligente, più è in grado di praticare a dovere l’<b>Alchimia</b>. Inoltre, ragionare ogni tanto è più semplice che schiantare le proprie corna sulle pareti.</p>
+						<h4>Agilità (AGI></h4>
+						<p>L’<b>Agilità</b> stabilisce quanto l’<b>omuncolo</b> è rapido e veloce. Una <b>prova</b> di <b>Agilità</b> può essere utile per evitare trappole e eseguire manovre acrobatiche.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr />
+		<div class="pagebreak"></div>
+
+		<section id="creation" class="creation d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h3>Aspetto</h3>
+						<p>Il <b>giocatore</b> tira 2 dadi per ogni <b>caratteristica</b> e consulta la tabella seguente per annotare quali <b>parti del corpo</b> possiede l’<b>omuncolo</b>.</p>
+						<p>
+							Ovviamente se l'<b>omuncolo</b> è privo di bocca non parla, se non ha almeno un occhio non vede, se ha solo un’ala non vola e così via. Un <b>giocatore</b> può infine decidere di rinunciare a due <b>parti del corpo</b> per prenderne una a sua scelta.
+						</p>
+					</div>
+					<div class="col-sm">
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Forza (FOR)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i><i class='dice bx bxs-dice-2'></i></th>
+									<td>Braccio</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i><i class='dice bx bxs-dice-4'></i></th>
+									<td>Corno</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i><i class='dice bx bxs-dice-6'></i></th>
+									<td>Bocca</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Mente (MEN)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i><i class='dice bx bxs-dice-2'></i></th>
+									<td>Naso</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i><i class='dice bx bxs-dice-4'></i></th>
+									<td>Orecchio</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i><i class='dice bx bxs-dice-6'></i></th>
+									<td>Occhio</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Agilità (AGI)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-1'></i><i class='dice bx bxs-dice-2'></i></th>
+									<td>Gamba</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-3'></i><i class='dice bx bxs-dice-4'></i></th>
+									<td>Coda</td>
+								</tr>
+								<tr>
+									<th scope="row"><i class='dice bx bxs-dice-5'></i><i class='dice bx bxs-dice-6'></i></th>
+									<td>Ala</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/creazione1.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr />
+
+		<section id="creation" class="creation d-flex flex-column">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-8">
+						<img src="assets/img/creazione2.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm-4">
+						<h3>Mansione</h3>
+						<p>
+							Naturalmente questi orribili esseri non rimangono a cazzeggiare tutto il giorno. A seconda della loro <b>mansione</b>, possiedono dei ruoli all’interno della vita di corte.
+						</p>
+						<p>
+							La <b>mansione</b> donerà 1 punto aggiuntivo a una delle <b>caratteristiche</b> dell’<b>omuncolo</b> e
+							permetterà a quest’ultimo di accedere a delle specifiche capacità alchemiche.
+						</p>
+						<p>Ogni <b>giocatore</b> stabilisce per il proprio <b>omuncolo</b> una di queste tre <b>mansioni</b>.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Famiglio</h4>
+						<p>
+							I <b>famigli</b> sono, per eccellenza, fedeli servitori dello <b>stregone</b>. Passano con quest’ultimo più tempo degli altri, lo aiutano nelle sue magiche, folli indagini e svolgono le normali faccende domestiche.
+						</p>
+						<p>
+							Gli <b>omuncoli famigli</b> tirano una <b>parte del corpo</b> aggiuntiva su <b>MEN</b>.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Guardiano</h4>
+						<p>
+							I <b>guardiani</b> sono i difensori della torre. Si occupano di dare la caccia agli intrusi, far piangere i prigionieri e fare da scorta allo <b>stregone</b> durante i gala.
+						</p>
+						<p>
+							Gli <b>omuncoli guardiani</b> tirano una <b>parte del corpo</b> aggiuntiva su <b>FOR</b>.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Ricognitore</h4>
+						<p>
+							Quando lo <b>stregone</b> deve risolvere una situazione delicata, si affida a un <b>ricognitore</b>. Sono  messaggeri, esploratori e spie.
+						</p>
+						<p>
+							Gli <b>omuncoli ricognitori</b> tirano una <b>parte del corpo</b> aggiuntiva su <b>AGI</b>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Button generateLook modal -->
+		<section class="d-print-none">
+			<button id="generate-look-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateLook">
+				Genera aspetto
+			</button>
+			<!-- generateLook Modal -->
+			<div class="modal fade" id="generateLook" tabindex="-1" aria-labelledby="generateLookLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" id="generateLookLabel">Aspetto</h3>
+							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="generateLookBody" class="modal-body">
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End generateLook Modal -->
+		<div class="pagebreak"></div>
+
+		<!-- ======= creation Section ======= -->
+		<section id="creation" class="creation section-bg">
+			<div class="container">
+
+			</div>
+		</section><!-- End creation Section -->
+		<!-- ======= mechanics Section ======= -->
+		<section id="mechanics" class="mechanics">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Meccanica di Gioco</h2>
+					<p>COMING SOON</p>
+				</div>
+
+			</div>
+		</section><!-- End mechanics Section -->
+		<!-- ======= alchemy Section ======= -->
+		<section id="alchemy" class="alchemy">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Alchimia</h2>
+					<p>COMING SOON</p>
+				</div>
+
+			</div>
+		</section><!-- End alchemy Section -->
+	</main><!-- End #main -->
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+		<div class="container">
+			<div class="credits">
+
+			</div>
+		</div>
+	</footer><!-- End  Footer -->
+
+	<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- JS Files -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/memory.js"></script>
+	<script src="assets/js/look.js"></script>
 
 </body>
 
