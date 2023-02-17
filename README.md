@@ -2,6 +2,10 @@
 ## Open Tabletop Roleplaying Game
 
 ![img](/assets/img/home.jpg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/img/home.jpg">
+  <img alt="aaa" src="/assets/img/home.jpg">
+</picture>
 
 **Malavoria** is a project that began in 2017. The idea was to create a simple role-playing game different from usual, fast-paced and with unusual characters. Due to lack of time it was abandoned for a few years, although the game mechanics and setting was practically finished. 
  
