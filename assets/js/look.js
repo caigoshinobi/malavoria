@@ -30,8 +30,8 @@ generateLookButton.addEventListener('click', function () {
     const randomAgi2 = agilita[Math.floor(Math.random() * agilita.length)];
 
     const randomFor3 = forza[Math.floor(Math.random() * forza.length)];
-    const randomMen3 = forza[Math.floor(Math.random() * mente.length)];
-    const randomAgi3 = forza[Math.floor(Math.random() * agilita.length)];
+    const randomMen3 = mente[Math.floor(Math.random() * mente.length)];
+    const randomAgi3 = agilita[Math.floor(Math.random() * agilita.length)];
 
     document.getElementById("generateLookBody").innerHTML = `
             <div class="col-sm">
