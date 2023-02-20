@@ -277,7 +277,7 @@
 				<div class="row">
 					<div class="col-sm">
 						<h3>Memorie</h3>
-						<p>Cosa ricorda? Un bel niente</p>
+						<p>Cosa ricorda? Un bel niente.</p>
 						<p>Solitamente ha qualche flash della sua morte e delle sue origini, quindi si fa un sacco di domande alle quali non può rispondere.</p>
 					</div>
 					<div class="col-sm">
@@ -301,16 +301,17 @@
 
 		<!-- Button generateMemories modal -->
 		<section class="d-print-none">
-			<button id="generate-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generateMemories">
-				Genera memoria
-			</button>
+			<div class="d-flex justify-content-center">
+				<button id="generate-button" type="button" class="memory btn btn-dark col-12 rounded-0" data-bs-toggle="modal" data-bs-target="#generateMemories">
+					Genera memoria
+				</button>
+			</div>
 			<!-- generateMemories Modal -->
 			<div class="modal fade" id="generateMemories" tabindex="-1" aria-labelledby="generateMemoriesLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h3 class="modal-title" id="generateMemoriesLabel">Memoria</h3>
-							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div id="generateMemoriesBody" class="modal-body">
 
@@ -828,9 +829,11 @@
 		<!--<div class="pagebreak"></div>-->
 		<!-- Button StoryOne modal -->
 		<section class="d-print-none">
-			<button type="button" class="genButton btn btn-dark rounded-0 col-12" data-bs-toggle="modal" data-bs-target="#storyOne">
-				Storiella
-			</button>
+			<div class="d-flex justify-content-center">
+				<button type="button" class="genButton btn btn-dark col-12 rounded-0" data-bs-toggle="modal" data-bs-target="#storyOne">
+					Storiella
+				</button>
+			</div>
 
 			<!-- StoryOne Modal -->
 			<div class="modal fade" id="storyOne" tabindex="-1" aria-labelledby="storyOneLabel" aria-hidden="true">
@@ -838,24 +841,25 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h3 class="modal-title" id="storyOneLabel">Ricordo: Fine coi fiocchi</h3>
-							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<i>
-								<p>
+
+							<p>
+								<i>
 									Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...
-								</p>
-								<p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
-								<p>“Dove dice Padrone che loro sono?”</p>
-								<p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</p>
-								<p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
-								<p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
-								<p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
-								<p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
-								<p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
-								<p>“Per gli Dei...”</p>
-								<p>Urla isteriche pervadono l’oscurità.</p>
-							</i>
+								</i>
+							</p>
+							<p><i>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</i></p>
+							<p><i>“Dove dice Padrone che loro sono?”</i></p>
+							<p><i>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira”</i></p>
+							<p><i>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</i></p>
+							<p><i>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</i></p>
+							<p><i>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</i></p>
+							<p><i>“No vedo bene, tanto Fioccodineve vede con naso.”</i></p>
+							<p><i>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</i></p>
+							<p><i>“Per gli Dei...”</i></p>
+							<p><i>Urla isteriche pervadono l’oscurità.</i></p>
+
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="genButton btn btn-dark rounded-sm col-12" data-bs-dismiss="modal">Close</button>
@@ -1073,7 +1077,6 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h3 class="modal-title" id="generateLookLabel">Aspetto</h3>
-							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div id="generateLookBody" class="modal-body">
 
@@ -1118,7 +1121,6 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h3 class="modal-title" id="exampleOneLabel">Creazione di Gnaf</h3>
-							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
 							<p>
@@ -1152,7 +1154,7 @@
 					<div class="col-sm-3">
 					</div>
 					<div class="col-sm-6">
-						<img src="assets/img/meccanica1b.jpg" class="img-responsive center-block img-fluid" />
+						<img src="assets/img/meccanica1.jpg" class="img-responsive center-block img-fluid" />
 						<h2 class="text-center">Meccanica di gioco</h2>
 					</div>
 					<div class="col-sm-3">
@@ -1197,62 +1199,43 @@
 								Stabilirà il numero di <b>successi</b> che la <b>prova</b> necessita.
 							</li>
 						</ul>
+
 					</div>
 
 				</div>
 			</div>
 		</section>
 
-
-		<!-- Button ExampleTwo modal -->
-		<section class="d-print-none">
-			<button type="button" class="genButton btn btn-dark rounded-0 col-12" data-bs-toggle="modal" data-bs-target="#exampleTwo">
-				Esempio di Prova
-			</button>
-			<!-- ExampleTwo Modal -->
-			<div class="modal fade" id="exampleTwo" tabindex="-1" aria-labelledby="exampleTwoLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h3 class="modal-title" id="exampleTwoLabel">Esempio prova</h3>
-							<button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<p>
-								<b>Giocatore</b>: <i>"Il mio omuncolo tenta di fare un salto mortale dal tavolo a terra. Devo tirare una prova?”</i>
-							</p>
-							<p>
-								<b>Custode</b>: <i>“Certo, questa cosa inutile necessita di una prova in AGI. Tira i dadi.”</i>
-							</p>
-							<p>
-								Il Custode inoltre stabilisce che, per eseguire il salto mortale, il giocatore dovrà ottenere almeno un successo. Fare un salto mortale non è così difficile, dopotutto.
-								Il giocatore ha un punteggio in AGI di 3 (ha 3 parti del corpo su questa caratteristica). Lancia quindi 3 dadi.
-							</p>
-							<p>
-								Con il primo dado fa 1.
-								Con il secondo fa 5.
-								Con il terzo fa 3.
-							</p>
-							<p>Come spiegato in precedenza, con 1 e 3 abbiamo un fallimento. 5 invece è considerato un successo.</p>
-							<p><b>Custode</b>: <i>“Ok, prova superata. L’omuncolo riesce a fare il salto mortale e atterra sul pavimento. Contenti tutti.”</i></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="genButton btn btn-dark rounded-sm col-12" data-bs-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End ExampleTwo Modal -->
+		<hr />
 		<div class="pagebreak"></div>
-
-
 
 		<section id="mechanics" class="mechanics d-flex flex-column">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm">
-						<h3>Stabilire le caratteristiche</h3>
+						<br />
+						<div class="card example">
+							<div class="card-body">
+								<p class="card-text">
+									<b>Giocatore</b>: "Il mio omuncolo tenta di fare un salto mortale dal tavolo a terra. Devo tirare una prova?”<br />
+
+									<b>Custode</b>: “Certo, questa cosa inutile necessita di una prova in AGI. Tira i dadi.”<br />
+
+									Il Custode inoltre stabilisce che, per eseguire il salto mortale, il giocatore dovrà ottenere almeno un successo. Fare un salto mortale non è così difficile, dopotutto.<br />
+									Il giocatore ha un punteggio in AGI di 3 (ha 3 parti del corpo su questa caratteristica). Lancia quindi 3 dadi.<br />
+
+									Con il primo dado fa 1.<br />
+									Con il secondo fa 5.<br />
+									Con il terzo fa 3.<br />
+
+									Come spiegato in precedenza, con 1 e 3 abbiamo un fallimento. 5 invece è considerato un successo.<br />
+									<b>Custode</b>: “Ok, prova superata. L’omuncolo riesce a fare il salto mortale e atterra sul pavimento. Contenti tutti.”
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<h4>Stabilire le caratteristiche</h4>
 						<p>
 							La <b>caratteristica</b> su cui il <b>giocatore</b> dovrà tirare viene stabilita con il buon senso dal <b>Custode</b>. Quest’ultimo potrebbe anche decidere di concedere al <b>giocatore</b> una scelta.
 						</p>
@@ -1270,19 +1253,103 @@
 						<p>Il <b>Custode</b> può concedere quindi al <b>giocatore</b> di decidere se usare <b>FOR</b> o <b>AGI</b>, per tentare di superare la <b>prova</b>.</p>
 					</div>
 					<div class="col-sm">
+						<h4>Favori & Sfavori</h4>
+						<p>Il <b>Custode</b> può inoltre stabilire che l’<b>omuncolo</b> è in una situazione favorevole per affrontare la prova o, viceversa, estremamente sfavorevole. A seconda dei casi, può aggiungere o togliere un dado alla prova dell’<b>omuncolo</b>. Questo vi rovinerà la vita spesso e volentieri.</p>
+						<br />
+						<div class="card example">
+							<div class="card-body">
+								<p class="card-text"><i>L’omuncolo di prima, quello del salto mortale, vuole saltare ma ha una palla di ferro incatenata alla gamba. Il Custode decide che la situazione è sfavorevole e toglie un dado alla prova dell’omuncolo. Se quindi il suo punteggio in AGI è 3, tirerà solamente 2 dadi. N.d.A.</i></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr />
+
+		<section id="mechanics" class="mechanics d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h4>Prove di gruppo</h4>
+						<p>
+							I <b>giocatori</b> possono inoltre supplicare il <b>Custode</b> di risolvere determinate situazioni con una <b>prova</b> di gruppo. Questo può essere utile quando più di un <b>omuncolo</b> è indispensabile per la riuscita della <b>prova</b>.
+						</p>
+						<p>
+							In questo caso, gli <b>omuncoli</b> effettuano la <b>prova</b> stabilita e sommano il loro numero di <b>successi</b>.
+						</p>
+						<br />
+						<div class="card example">
+							<div class="card-body">
+								<p class="card-text">
+									<i>
+										Un gruppo di omuncoli vuole un determinato libro, posizionato su una mensola di legno. L’unico sgabello presente non basta per raggiungerlo. I giocatori chiedono al Custode di eseguire una prova di gruppo, spiegando che gli omuncoli proveranno a stare in equilibrio l’uno sopra l’altro.
+										Il Custode acconsente e stabilisce che ogni omuncolo dovrà fare almeno 1 successo in AGI per superare la prova.
+									</i>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
 						<img src="assets/img/meccanica2.jpg" class="img-responsive center-block img-fluid" />
 					</div>
 					<div class="col-sm">
-						<h3>Favori & Sfavori</h3>
-						<p>Il <b>Custode</b> può inoltre stabilire che l’<b>omuncolo</b> è in una situazione favorevole per affrontare la prova o, viceversa, estremamente sfavorevole. A seconda dei casi, può aggiungere o togliere un dado alla prova dell’<b>omuncolo</b>. Questo vi rovinerà la vita spesso e volentieri.</p>
+						<h3>Scontri</h3>
+						<p>
+							Uno <b>scontro</b> è una particolare tipologia di <b>prova</b>, con regole un po’ diverse, e serve a stabilire cosa succede quando gli <b>omuncoli</b> si prendono a legnate con altra gente.
+						</p>
+						<p>
+							Durante uno <b>scontro</b> le parti in causa decidono, ognuna a seconda delle proprie preferenze, quale <b>caratteristica</b> utilizzare per combattere.
+							Entrambe le parti quindi tirano tanti dadi quanto il valore della <b>caratteristica</b> da loro scelta.
+							Fatto questo, il personaggio con il maggior numero di <b>successi</b> vince lo scambio e infligge <b>danno</b> pari alla differenza dei <b>successi</b>.
+						</p>
 					</div>
 
 				</div>
 			</div>
 		</section>
 
+		<div class="pagebreak"></div>
+		<hr />
 
+		<section id="mechanics" class="mechanics d-flex flex-column">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
 
+						<img src="assets/img/meccanica3.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+						<p>Ogni <b>caratteristica</b> può essere utilizzata in uno <b>scontro</b>, stabilendo scenari differenti:</p>
+						<ul>
+							<li>
+								Affrontare uno <b>scontro</b> con <b>FOR</b> stabilisce che l’<b>omuncolo</b> utilizza la sua potenza fisica per danneggiare il nemico.
+							</li>
+							<li>
+								Un <b>omuncolo</b> che affronta uno <b>scontro</b> con <b>AGI</b> contrasta il suo nemico con mosse fulminee, tramite calci rotanti e leve improbabili.
+							</li>
+							<li>
+								Affrontare uno scontro con <b>MEN</b> è più complicato. L’<b>omuncolo</b> può utilizzare una <b>pozione</b> (vedi capitolo Alchimia) o, se il <b>Custode</b> lo permette, astenersi e compiere una <b>prova</b> esterna al combattimento.
+							</li>
+						</ul>
+						<br />
+						<div class="card example">
+							<div class="card-body">
+								<p class="card-text">
+									<i>
+										Schiformo è incaricato di proteggere le segrete dell Torre di Oricalco. Cerca rogne con un elfo che, evidentemente, si è perso (o è molto stupido).<br />
+										L’omuncolo utilizza la sua caratteristica più alta per attaccare, che è FOR. A sua volta l’elfo sceglie AGI.<br />
+										L’omuncolo tira 4 dadi e fa 3 successi. L’elfo tira 3 dadi e fa 1 successo.<br />
+										La differenza dei successi è 3-1, quindi 2. Schiformo vince lo scontro e infligge 2 danni allo sfortunato elfo.
+									</i>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- End mechanics Section -->
 		<hr />
@@ -1298,29 +1365,32 @@
 			</div>
 		</section>
 
-			<hr />
-			<!-- ======= Footer ======= -->
-			<footer id="footer">
-				<div class="container">
-					<button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark col-12" data-bs-toggle="modal">
-						Stampa
-					</button>
-					<div class="credits">
-						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-					</div>
+		<hr />
+
+
+	</main>
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="container">
+				<button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark col-12" data-bs-toggle="modal">
+					Stampa
+				</button>
+				<div class="credits">
+					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 				</div>
-			</footer><!-- End  Footer -->
+			</div>
+		</footer><!-- End  Footer -->
 
-			<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+		<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-			<!-- Vendor JS Files -->
+		<!-- Vendor JS Files -->
 
-			<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-			<!-- JS Files -->
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/memory.js"></script>
-			<script src="assets/js/look.js"></script>
+		<!-- JS Files -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/memory.js"></script>
+		<script src="assets/js/look.js"></script>
 
 </body>
 
