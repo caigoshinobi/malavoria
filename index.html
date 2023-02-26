@@ -40,6 +40,7 @@
 					<a href="https://github.com/caigoshinobi/malavoria" class="github"><i class="bx bxl-github"></i></a>
 					<a href="https://www.paypal.com/donate/?hosted_button_id=4SARELNKLD6TL" class="paypal"><i class="bx bxl-paypal"></i></a>
 					<a onclick=shareMalavoria()><i class="bx bx-share-alt"></i></a>
+					<a onclick="window.print();return false;" id="print" type="button" data-bs-toggle="modal"><i class='bx bxs-printer'></i></a>
 				</div>
 			</div>
 
@@ -285,7 +286,7 @@
 						<p>Se il Custode lo desidera, è possibile ricostruire gli ultimi traumi del nostro omuncolo utilizzando il pulsante Genera memoria qui sotto.</p>
 					</div>
 					<div class="col-sm">
-						<p>Se invece possedete la versione cartacea o in PDF del manuale, potete consultare le tabelle presenti nelle prossime pagine e tirare qualche dado.</p>
+						<p>Se invece possedete una versione cartacea o in PDF del manuale, potete consultare le tabelle presenti nelle prossime pagine e tirare qualche dado.</p>
 						<p>Ad ogni omuncolo in gioco dovrebbe essere assegnata questa memoria. Poi sta al Custode decidere se renderla nota fin da subito o in un particolare momento del gioco.</p>
 					</div>
 				</div>
@@ -1154,7 +1155,7 @@
 					</div>
 					<div class="col-sm-6">
 						<img src="assets/img/meccanica1.jpg" class="img-responsive center-block img-fluid" />
-						<h2 class="text-center">Meccanica di gioco</h2>
+						<h2 class="text-center">Meccanica di gioco<br /><small class="text-muted">aka Dethrone System</small></h2>
 					</div>
 					<div class="col-sm-3">
 					</div>
@@ -1173,11 +1174,10 @@
 						</p>
 						<h3>Successi & Fallimenti</h3>
 						<p>
-							Malavoria basa la sua logica di gioco sui successi e sui fallimenti. Un successo è quando, con un dado, si ottiene 4, 5 e 6. Durante scontri e prove, più successi il giocatore effettua, più sarà alta la probabilità che l’omuncolo raggiunga gli obiettivi prefissati.
-							Viceversa un fallimento si ottiene con 1, 2 e 3.
+							Malavoria fonda la sua logica di gioco sui successi e sui fallimenti. Un successo è quando, con un dado, si ottiene 4, 5 e 6. Scontri e prove, come vedremo, richiedono un numero prefissato di successi per essere superate. Più successi il giocatore effettua con il suo tiro, più sarà alta la probabilità che l’omuncolo raggiunga gli obiettivi prefissati.
 						</p>
 						<p>
-							Nulla vi vieta di utilizzare delle monete, al posto dei dadi. Noi non lo consigliamo perché fanno casi-no, non girano bene e c'è sempre qualcuno che se le intasca.
+							Nulla vi vieta di utilizzare delle monete al posto dei dadi. Non lo consigliamo perché fanno casino, non girano bene e c'è sempre qualcuno che se le intasca.
 						</p>
 					</div>
 					<div class="col-sm">
@@ -1291,7 +1291,7 @@
 						<p>
 							Il Custode può fornire agli omuncoli 1 dado di vantaggio per affrontare una prova, se la situazione è a loro favore.
 						</p>
-						<p>Viceversa, se il Custode stabilisce che la situazione è disperata e la prova particolarmente ardua, i successi necessari aumenteranno di 1.</p>
+						<p>Viceversa, se il Custode stabilisce che la situazione è disperata e la prova particolarmente ardua, verrà applicato uno svantaggio e i dadi diminuiranno di 1.</p>
 					</div>
 					<div class="col-sm">
 						<img src="assets/img/meccanica3.jpg" class="img-responsive center-block img-fluid" />
@@ -1332,14 +1332,14 @@
 						<p>
 							Se l'omuncolo perde lo scontro non subisce danni come per picchiare (non avrebbe senso), a meno che il nemico non stia a sua volta lanciando verso l'omuncolo.
 						</p>
-						<p>Infine può decidere di lanciare oggetti pesanti, in questo caso avrà svantaggio alla prova di lanciare ma infliggerà un danno aggiuntivo.</p>
-						<p>Ma cosa lancia? Qualsiasi piccolo oggetto che gli capita a tiro. Un lanciatore esperto chiede sempre al Custode di descrivere accuratamente ciò che lo circonda.</p>
+						<p>Può decidere, infine, di lanciare oggetti pesanti, in questo caso avrà svantaggio alla prova di lanciare ma infliggerà 1 danno aggiuntivo.</p>
+						<p>Cosa lancia? Qualsiasi piccolo oggetto che gli capita a tiro. Un lanciatore esperto chiede sempre al Custode di descrivere accuratamente ciò che lo circonda.</p>
 
 					</div>
 					<div class="col-sm">
 						<h4>Difendere</h4>
 						<p>Se un omuncolo preferisce difendere, infine, effettua una prova con la sua caratteristica più alta e ottiene vantaggio. In questo caso non infliggerà alcun danno ma eviterà accuratamente di subirne.</p>
-						<p>In termini di gioco, l'omuncolo cerca di salvarsi la vita sfruttando le sue capacità. Immaginiamo che, se la caratteristica più alta è AGI, tenta di schivare i colpi in arrivo. Se è MEN, tenta di distrarre l'assalitore oppure si finge morto.</p>
+						<p>In termini di gioco, l'omuncolo cerca di salvarsi la vita sfruttando le sue capacità. Immaginiamo che: se la caratteristica più alta è AGI, tenta di schivare i colpi in arrivo; se è MEN, tenta di distrarre l'assalitore oppure si finge morto.</p>
 					</div>
 				</div>
 			</div>
@@ -1355,7 +1355,7 @@
 						<p>Posso picchiare un nemico lontano o lanciare qualcosa verso un nemico vicino?</p>
 						<p>
 							Certo! Ma il Custode avrà il buon senso di darti uno svantaggio alla prova in entrambi i casi. Nel primo caso te la rischi a raggiungere il nemico, il quale ha tutto il tempo di prepararsi per accoglierti.
-							Nel secondo caso avrai svantaggio perchè esegui azioni macchinose come prendere la mira, quando al nemico basta tirarti un ceffone.
+							Nel secondo caso avrai svantaggio perchè stai eseguendo azioni macchinose come prendere la mira, quando al nemico basta tirarti un ceffone.
 						</p>
 						<p>
 							Chiaramente con 'lontano' si intende dall'altra parte della stanza, non dell'oceano. Speriamo sempre che il Custode sia lo sveglio del gruppo.
@@ -1364,16 +1364,16 @@
 					<div class="col-sm">
 						<h4>Ordine degli eventi</h4>
 						<p>Il Dethrone System non ha, come altre meccaniche di gioco, l'iniziativa. Non si stabilisce quindi tramite dei tiri di dado chi inizia a tirare schiaffi.</p>
-						<p>Nel nostro caso, durante uno scontro tutti tirano i dadi contemporaneamente. Ma come possiamo stabilire chi inizia lo scontro? Come si scatena? Come sono posizionati i personaggi? Tutto questo viene stabilito con un accordo tra i giocatori e il Custode.</p>
+						<p>Nel nostro caso, durante uno scontro tutti tirano i dadi contemporaneamente. Ma come possiamo stabilire chi inizia lo scontro? Come sono posizionati i personaggi? Tutto questo viene stabilito con un accordo tra i giocatori e il Custode.</p>
 					</div>
 					<div class="col-sm">
 						<div class="card example">
 							<div class="card-body">
 								<p class="card-text">
-									I nostri omuncoli falliscono una prova in MEN, non sentono un plotone di goblin arrivare e vengono accerchiati, belli stretti. Il Custode dovrebbe obbligare tutti gli omuncoli ad affrontare una zuffa contro i goblin, magari con svantaggio.
+									I nostri omuncoli falliscono una prova in MEN, non sentono un plotone di goblin arrivare e vengono accerchiati, belli stretti. Il Custode dovrebbe obbligare tutti gli omuncoli ad affrontare una zuffa (vedi sotto) contro i goblin, magari con svantaggio.
 								</p>
 								<p class="card-text">
-									I nostri omuncoli stanno attraversando un ponte, vedono dall'altra parte un gruppo di gendarmi che chiede il pedaggio. Entrambi i gruppi, se hanno intezione di scontrarsi, hanno tutto il tempo di organizzarsi e trovare la giusta strategia. Ricognitori e famigli possono posizionarsi dietro ai guardiani per evitare la zuffa, allo stesso modo gli arceri del gruppo nemico possono posizionarsi dietro agli spadaccini
+									I nostri omuncoli stanno attraversando un ponte, vedono dall'altra parte un gruppo di gendarmi che chiede il pedaggio. Entrambi i gruppi, se hanno intezione di scontrarsi, hanno tutto il tempo di organizzarsi e trovare la giusta strategia. Ricognitori e famigli possono posizionarsi dietro ai guardiani per evitare di venire disintegrati, allo stesso modo gli arceri del gruppo nemico possono posizionarsi dietro gli spadaccini.
 								</p>
 							</div>
 						</div>
@@ -1383,6 +1383,7 @@
 		</section>
 
 		<hr />
+		<div class="pagebreak"></div>
 
 		<section id="mechanics" class="mechanics d-flex flex-column">
 			<div class="container">
@@ -1499,14 +1500,12 @@
 		<!-- ======= Footer ======= -->
 		<footer id="footer" class="d-print-none">
 			<div class="container">
-				<button onclick="window.print();return false;" id="print" type="button" class="genButton btn btn-dark col-12" data-bs-toggle="modal">
-					Stampa
-				</button>
 				<div class="credits">
 					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 				</div>
 			</div>
-		</footer><!-- End  Footer -->
+		</footer>
+	    <!-- End  Footer -->
 
 		<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
