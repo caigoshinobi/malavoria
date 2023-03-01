@@ -5,5 +5,6 @@
  
 In the past the goal was to commercialize **Malavoria**, but I decided over the years to finalize and release it under Creative Commons BY-NC-SA 4.0 license (waiting for the ORC). Images are generated using AI (midjourney) and released under the same license.
 
-The project is *still under development*.
+The project is *still under development*.  
+
 Malavoria Website: [malavoria.com](https://malavoria.com)
