@@ -54,25 +54,43 @@ h4 {
 	font-size: 30px;
 }
 
-small {
-    font-size: 40px;
+.example-text {
+    font-size: 12px;
+    font-style: italic;
 }
 
+.examples {
+    font-family: AmaticSC;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.examples:hover {
+    font-family: AmaticSC;
+    font-weight: bold;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.tab-pane {
+    height: 250px
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #149ddd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #149ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
 }
 
 .back-to-top i {
