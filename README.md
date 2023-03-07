@@ -9,4 +9,4 @@ The project is *still under development*.
 
 Malavoria Website: [malavoria.com](https://malavoria.com)
 
-Lang: IT
+Lang `IT`
