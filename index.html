@@ -32,7 +32,7 @@
 		<div class="d-flex flex-column">
 
 			<div class="profile">
-				<img src="assets/img/logo_white.png" alt="" class="img-fluid rounded-circle">
+				<img src="assets/img/logo_white.jpg" alt="" class="img-fluid rounded-circle">
 				<h1 class="text-light"><a href="index.html">MALAVORIA</a></h1>
 				<div class="social-links mt-3 text-center">
 					<!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -50,10 +50,11 @@
 					<li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-castle"></i> <span>Home</span></a></li>
 					<li><a href="#intro" class="nav-link scrollto"><i class="bx bxs-heart"></i> <span>Introduzione</span></a></li>
 					<li><a href="#identikit" class="nav-link scrollto"><i class="bx bx-show"></i> <span>Identikit di un omuncolo</span></a></li>
-					<li><a href="#creation" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Creazione</span></a></li>
+					<li><a href="#creation" class="nav-link scrollto"><i class='bx bxs-hand'></i> <span>Creazione</span></a></li>
 					<li><a href="#mechanics" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Meccanica di gioco</span></a></li>
 					<li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
 					<li><a href="#keeper" class="nav-link scrollto"><i class='bx bxs-skull'></i> <span>Compendio del Custode</span></a></li>
+					<li><a href="#bestiary" class="nav-link scrollto"><i class='bx bx-ghost'></i> <span>Bestiario</span></a></li>
 				</ul>
 			</nav><!-- .nav-menu -->
 
@@ -283,9 +284,6 @@
 				</div>
 			</div>
 
-			<hr />
-			<div class="pagebreak"></div>
-
 			<!-- GENERA MEMORIA MODAL -->
 			<div class="d-flex justify-content-center d-print-none">
 				<button id="generate-button" type="button" class="memory btn btn-dark col-12 rounded-0" data-bs-toggle="modal" data-bs-target="#generateMemories">
@@ -308,6 +306,9 @@
 					</div>
 				</div>
 			</div>
+
+			<hr />
+			<div class="pagebreak"></div>
 
 			<!-- GENERA MEMORIA MODAL -->
 			<div class="container d-flex flex-column">
@@ -1528,8 +1529,6 @@
 						<h4>Afferrare</h4>
 						<p>Gli omuncoli potrebbero desiderare di immobilizzare il proprio nemico. Afferrare funziona come picchiare con la differenza che, se il nemico perde la prova, rimarrà intrappolato. Non verranno inflitti danni a nessuna delle due parti</p>
 						<p>Ogni volta che si vuole spostare, picchiare o effettuare una qualsiasi prova di FOR e AGI sull'intrappolato, quest'ultimo ha diritto a una prova per liberarsi.</p>
-						<h4>Trasportare</h4>
-						<p>Talvolta un omuncolo ha bisogno di trasportare oggetti con sé. Quanti peso può trasportare dipende dal suo punteggio di FOR. Nella tabella che segue ci sono alcuni esempi di peso degli oggetti.</p>
 					</div>
 				</div>
 			</div>
@@ -1542,6 +1541,66 @@
 						<h4>Spingere/Tirare</h4>
 						<p>Senza andare troppo nel dettaglio, se l'omuncolo si accontenta di spingere/tirare qualcuno senza infliggere danno, si può adattare quanto indicato per afferrare.</p>
 						<p>Nel caso, invece, in cui l'omuncolo voglia picchiare un nemico e spingerlo verso qualcosa, si può risolvere semplicemente applicando uno svantaggio alla prova di picchiare.</p>
+
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/meccanica5.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
+						<h4>Ricucire</h4>
+						<p>Se l'omuncolo rimane vivo dopo uno scontro, può tentare di ricucire le parti perse. Per farlo deve tirare nella caratteristica impattata (se ha perso il naso, sarà MEN), ed eseguire il 100% dei successi.</p>
+						<p>
+							Altri omuncoli possono decidere di aiutare il compagno a ricucirsi, i successi richiesti si abbasseranno di 1 per ogni aiuto.
+							Anche se l’aiuto dei compagni può comprire tutti i successi, tuttavia, l'omuncolo ferito dovrà compiere almeno 1 successo.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+			<div class="pagebreak"></div>
+
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm">
+						<h3>Proprietà degli oggetti</h3>
+						<p>Ogni oggetto è composto da 2 caratteristiche importanti: peso e fattura. Il peso si spiega da solo, la fattura definisce quanto un oggetto è ben costruito, sia a livello di materiali che di abilità costruttiva.</p>
+						<p>Infine, la somma di peso e fattura definisce la qualità di un oggetto. Troverai diverse meccaniche di gioco che ti chiederanno di utilizzare uno di questi 3 indicatori.</p>
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">Fattura</th>
+									<th scope="col">Oggetti</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">0</th>
+									<td>Scadente</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>Decente</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Buona</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Ottima</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Artefatto</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm">
+						<img src="assets/img/meccanica7.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm">
 						<table class="table table-sm table-striped">
 							<thead>
 								<tr>
@@ -1572,22 +1631,10 @@
 								</tr>
 							</tbody>
 						</table>
-						<br />
-
-					</div>
-					<div class="col-sm">
-						<img src="assets/img/meccanica5.jpg" class="img-responsive center-block img-fluid" />
-					</div>
-					<div class="col-sm">
-						<h4>Rompere oggetti</h4>
-						<p>Per rompere un oggetto, un omuncolo deve compiere una prova in FOR e superare il numero di successi stabilito dal Custode, in base a quanto è resistente l’oggetto.</p>
-						<h4>Ricucire</h4>
-						<p>Se l'omuncolo rimane vivo dopo uno scontro, può tentare di ricucire le parti perse. Per farlo deve tirare nella caratteristica impattata (se ha perso il naso, sarà MEN), ed eseguire il 100% dei successi.</p>
-						<p>
-							Altri omuncoli possono decidere di aiutare il compagno a ricucirsi, i successi richiesti si abbasseranno di 1 per ogni aiuto.
-							Anche se l’aiuto dei compagni può comprire tutti i successi, tuttavia, l'omuncolo ferito dovrà compiere almeno 1 successo.
-						</p>
-					</div>
+						<h4>Oggetti: Trasportare</h4>
+						<p>Talvolta un omuncolo ha bisogno di trasportare oggetti con sé. Può trasportare oggetti fino a un peso complessivo pari al suo punteggio di FOR. Fare riferimento alla tabella apposita.</p>
+						<h4>Oggetti: Rompere</h4>
+						<p>Per infliggere danni a un oggetto, un omuncolo deve compiere una normale prova in picchiare o lanciare e superare il punteggio di fattura dell'oggetto. Se vince la prova infligge danni come al solito. Se un oggetto accumula tanti danni quanto il suo punteggio di qualità, viene distrutto.
 				</div>
 			</div>
 
@@ -1597,7 +1644,6 @@
 		<hr />
 
 		<!-- ALCHEMY -->
-
 		<section id="alchemy">
 			<div class="container d-flex flex-column">
 				<div class="row">
@@ -1647,148 +1693,170 @@
 					<div class="col-sm-4">
 						<h4>Creare una Pozione</h4>
 						<p>Ogni sessione di gioco, un omuncolo può creare tante pozioni quanto il punteggio in MEN. Queste si possono accumulare, se avanzate dalla sessione precedente.</p>
-						<p>Non servono oggetti o prove di alcun tipo per creare una pozione. Il giocatore dovrà semplicemente consultare il Listone delle Pozioni, tirare un dado per pozione, e man mano consultare la tabella legata alla mansione del suo omuncolo.</p>
+						<p>Non servono oggetti o prove di alcun tipo per creare una pozione. Il giocatore dovrà semplicemente consultare il Listone delle Pozioni, tirare un dado per pozione e man mano consultare la tabella legata alla mansione del suo omuncolo.</p>
 						<p>Nel caso fosse pigro, può semplicemente utilizzare la funzionalità Genera Pozione qui sotto.</p>
+					</div>
 				</div>
-			</div>
 
-			<hr />
+				<!-- GENERA POZIONE MODAL -->
+				<section class="d-print-none">
+					<button id="generate-potion-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generatePotion">
+						Genera Pozione
+					</button>
+					<div class="modal fade" id="generatePotion" tabindex="-1" aria-labelledby="generatePotionLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title" id="generatePotionLabel">Pozione</h3>
+								</div>
+								<div id="generatePotionBody" class="modal-body">
 
-			<div class="container d-flex flex-column">
-				<div class="row">
-					<div class="col-sm-4">
-						<h3>Listone delle Pozioni</h3>
-
-						<table class="table table-sm table-striped">
-							<thead>
-								<tr>
-									<th scope="col">Guardiani</th>
-									<th scope="col">Pozione</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>Brutale</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>Multipugno</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>...</td>
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td>...</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td>Scudo</td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td>...</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<table class="table table-sm table-striped">
-							<thead>
-								<tr>
-									<th scope="col">Famigli</th>
-									<th scope="col">Pozione</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>Acida</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>Idrante</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>Incendiaria</td>
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td>Sfigata</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td>Sociale</td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td>Zeta</td>
-								</tr>
-							</tbody>
-						</table>
-
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-4">
+				</section>
+				<!-- END GENERA POZIONE MODAL -->
+				<hr />
+
+				<div class="container d-flex flex-column">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Listone delle Pozioni</h3>
+
+							<table class="table table-sm table-striped">
+								<thead>
+									<tr>
+										<th scope="col">Guardiani</th>
+										<th scope="col">Pozione</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Brutale</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Multipugno</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>...</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>...</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Scudo</td>
+									</tr>
+									<tr>
+										<th scope="row">6</th>
+										<td>...</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table class="table table-sm table-striped">
+								<thead>
+									<tr>
+										<th scope="col">Famigli</th>
+										<th scope="col">Pozione</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Acida</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Idrante</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Incendiaria</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Sfigata</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Sociale</td>
+									</tr>
+									<tr>
+										<th scope="row">6</th>
+										<td>Zeta</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<div class="col-sm-4">
 
 
-						<table class="table table-sm table-striped">
-							<thead>
-								<tr>
-									<th scope="col">Ricognitori</th>
-									<th scope="col">Pozione</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>Facchina</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>Fortunata</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>Lanciatrice</td>
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td>Runica</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td>Segugia</td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td>Sarta</td>
-								</tr>
-							</tbody>
-						</table>
+							<table class="table table-sm table-striped">
+								<thead>
+									<tr>
+										<th scope="col">Ricognitori</th>
+										<th scope="col">Pozione</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Facchina</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Fortunata</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Lanciatrice</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Runica</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Segugia</td>
+									</tr>
+									<tr>
+										<th scope="row">6</th>
+										<td>Sarta</td>
+									</tr>
+								</tbody>
+							</table>
 
+						</div>
+						<div class="col-sm-4"></div>
 					</div>
-					<div class="col-sm-4"></div>
 				</div>
-			</div>
 
-			<hr />
+				<hr />
 
-			<div class="container d-flex flex-column">
-				<div class="row">
-					<div class="col-sm-4">
-						<h4>Zuffa: Pozioni</h4>
-						<p>
-							Se si utilizza una pozione di danno durante una zuffa, questa viene utilizzata contro tutti i nemici. Se la pozione non causa danni ma effetti specifici, si considera il singolo bersaglio. Naturalmente, come per i normali scontri, durante la zuffa si possono utilizzare solo pozioni da combattimento.
-						</p>
+				<div class="container d-flex flex-column">
+					<div class="row">
+						<div class="col-sm-4">
+							<h4>Pozioni: Zuffa</h4>
+							<p>
+								Se si utilizza una pozione di danno durante una zuffa, questa viene utilizzata contro tutti i nemici. Se la pozione non causa danni ma effetti specifici, si considera il singolo bersaglio. Naturalmente, come per i normali scontri, durante la zuffa si possono utilizzare solo pozioni da combattimento.
+							</p>
+						</div>
+						<div class="col-sm-4">
+							<h2>STESURA IN CORSO...</h2>
+						</div>
+						<div class="col-sm-4"></div>
 					</div>
-					<div class="col-sm-4">
-						<h2>STESURA IN CORSO...</h2>
-					</div>
-					<div class="col-sm-4"></div>
 				</div>
-			</div>
 
 
 		</section>
@@ -1797,26 +1865,27 @@
 
 
 	</main>
-		<!-- ======= Footer ======= -->
-		<footer id="footer" class="d-print-none">
-			<div class="container">
-				<div class="credits">
-					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-				</div>
+	<!-- ======= Footer ======= -->
+	<footer id="footer" class="d-print-none">
+		<div class="container">
+			<div class="credits">
+				<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 			</div>
-		</footer>
-	    <!-- End  Footer -->
+		</div>
+	</footer>
+	<!-- End  Footer -->
 
-		<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	<a href="#" class="d-print-none back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-		<!-- Vendor JS Files -->
+	<!-- Vendor JS Files -->
 
-		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-		<!-- JS Files -->
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/memory.js"></script>
-		<script src="assets/js/look.js"></script>
+	<!-- JS Files -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/memory.js"></script>
+	<script src="assets/js/look.js"></script>
+	<script src="assets/js/potion.js"></script>
 
 </body>
 

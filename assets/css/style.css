@@ -202,6 +202,7 @@ h4 {
 .nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
+  height: 40px;
 }
 
 .nav-menu a,
