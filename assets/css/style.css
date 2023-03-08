@@ -74,7 +74,12 @@ h4 {
 }
 
 .tab-pane {
-    height: 250px
+    height: 250px;
+}
+
+.battlepotion {
+    width:20px;
+    height:20px;
 }
 /*--------------------------------------------------------------
 # Back to top button

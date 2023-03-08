@@ -1287,8 +1287,9 @@
 				</div>
 			</div>
 
-			<div class="pagebreak"></div>
 			<hr />
+			<div class="pagebreak"></div>
+
 
 			<div class="container d-flex flex-column">
 				<div class="row">
@@ -1452,7 +1453,7 @@
 					</div>
 					<div class="col-sm">
 						<h4>Zuffa: Lanciare</h4>
-						<p>Il fatto che tu possa lanciare non significa che sia saggio farlo. Chi cerca di lanciare cose addosso alla gente durante una zuffa è un suicida. All'interno di una zuffa le prove di lanciare hanno svantaggio.</p>
+						<p>Il fatto che tu possa lanciare non significa che sia saggio farlo. All'interno di una zuffa le prove di lanciare hanno svantaggio, inoltre non si lancerà contro tutti i nemici presenti ma si dovrà stabilire un singolo bersaglio.</p>
 						<h4>Sono obbligato?</h4>
 						<p>Dipende dall'ordine degli eventi.</p>
 						<p>Se i gruppi si trovano inizialmente distanti e gli omuncoli hanno tempo da dedicare alla strategia, no. </p>
@@ -1544,15 +1545,16 @@
 
 					</div>
 					<div class="col-sm">
-						<img src="assets/img/meccanica5.jpg" class="img-responsive center-block img-fluid" />
-					</div>
-					<div class="col-sm">
 						<h4>Ricucire</h4>
 						<p>Se l'omuncolo rimane vivo dopo uno scontro, può tentare di ricucire le parti perse. Per farlo deve tirare nella caratteristica impattata (se ha perso il naso, sarà MEN), ed eseguire il 100% dei successi.</p>
 						<p>
 							Altri omuncoli possono decidere di aiutare il compagno a ricucirsi, i successi richiesti si abbasseranno di 1 per ogni aiuto.
 							Anche se l’aiuto dei compagni può comprire tutti i successi, tuttavia, l'omuncolo ferito dovrà compiere almeno 1 successo.
 						</p>
+					</div>
+					<div class="col-sm">
+
+						<img src="assets/img/meccanica5.jpg" class="img-responsive center-block img-fluid" />
 					</div>
 				</div>
 			</div>
@@ -1643,6 +1645,7 @@
 		<!-- END MECHANICS -->
 
 		<hr />
+		<div class="pagebreak"></div>
 
 		<!-- ALCHEMY -->
 		<section id="alchemy">
@@ -1677,6 +1680,7 @@
 						<p>
 							Intanto, per introdurvi il tutto, lasciatemi ribadire che l’alchimia è una scienza e, come tutte le scienze, possiede alcune regole fondamentali dette…
 						</p>
+						<img src="assets/img/alchimia2.jpg" class="img-responsive center-block img-fluid" />
 					</div>
 					<div class="col-sm-4">
 						<h3>Leggi Alchemiche</h3>
@@ -1692,7 +1696,7 @@
 						<p>La pozione deve essere bevuta nell’esatto momento in cui si vuole intraprendere la prova indicata, altrimenti l’effetto andrà perso. Non è che la bevi e poi ci pensi, ecco.</p>
 					</div>
 					<div class="col-sm-4">
-						<h4>Creare una Pozione</h4>
+						<h3>Creare una Pozione</h3>
 						<p>Ogni sessione di gioco, un omuncolo può creare tante pozioni quanto il punteggio in MEN. Queste si possono accumulare, se avanzate dalla sessione precedente.</p>
 						<p>Non servono oggetti o prove di alcun tipo per creare una pozione. Il giocatore dovrà semplicemente consultare il Listone delle Pozioni, tirare un dado per pozione e man mano consultare la tabella legata alla mansione del suo omuncolo.</p>
 						<p>Nel caso fosse pigro, può semplicemente utilizzare la funzionalità Genera Pozione qui sotto.</p>
@@ -1700,165 +1704,294 @@
 				</div>
 			</div>
 
-				<!-- GENERA POZIONE MODAL -->
-				<section class="d-print-none">
-					<button id="generate-potion-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generatePotion">
-						Genera Pozione
-					</button>
-					<div class="modal fade" id="generatePotion" tabindex="-1" aria-labelledby="generatePotionLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h3 class="modal-title" id="generatePotionLabel">Pozione</h3>
-								</div>
-								<div id="generatePotionBody" class="modal-body">
+			<!-- GENERA POZIONE MODAL -->
+			<section class="d-print-none">
+				<button id="generate-potion-button" type="button" class="memory btn btn-dark rounded-0 btn-lg col-12" data-bs-toggle="modal" data-bs-target="#generatePotion">
+					Genera Pozione
+				</button>
+				<div class="modal fade" id="generatePotion" tabindex="-1" aria-labelledby="generatePotionLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title" id="generatePotionLabel">Pozione</h3>
+							</div>
+							<div id="generatePotionBody" class="modal-body">
 
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
-								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="genButton btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
-				</section>
-				<!-- END GENERA POZIONE MODAL -->
-				<hr />
+				</div>
+			</section>
+			<!-- END GENERA POZIONE MODAL -->
 
-				<div class="container d-flex flex-column">
-					<div class="row">
-						<div class="col-sm-4">
-							<h3>Listone delle Pozioni</h3>
+			<hr />
+			<div class="pagebreak"></div>
 
-							<table class="table table-sm table-striped">
-								<thead>
-									<tr>
-										<th scope="col">Guardiani</th>
-										<th scope="col">Pozione</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Brutale</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Multipugno</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>...</td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>...</td>
-									</tr>
-									<tr>
-										<th scope="row">5</th>
-										<td>Scudo</td>
-									</tr>
-									<tr>
-										<th scope="row">6</th>
-										<td>...</td>
-									</tr>
-								</tbody>
-							</table>
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3>Listone delle Pozioni</h3>
 
-							<table class="table table-sm table-striped">
-								<thead>
-									<tr>
-										<th scope="col">Famigli</th>
-										<th scope="col">Pozione</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Acida</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Idrante</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Incendiaria</td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>Sfigata</td>
-									</tr>
-									<tr>
-										<th scope="row">5</th>
-										<td>Sociale</td>
-									</tr>
-									<tr>
-										<th scope="row">6</th>
-										<td>Zeta</td>
-									</tr>
-								</tbody>
-							</table>
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">Guardiani</th>
+									<th scope="col">Pozione</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Brutale</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Cinquina</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>...</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>...</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>Scudo</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td>...</td>
+								</tr>
+							</tbody>
+						</table>
 
-						</div>
-						<div class="col-sm-4">
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">Famigli</th>
+									<th scope="col">Pozione</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Acida</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Idrante</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Incendiaria</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Sfigata</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>Sociale</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td>Zeta</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<div class="col-sm-4">
 
 
-							<table class="table table-sm table-striped">
-								<thead>
-									<tr>
-										<th scope="col">Ricognitori</th>
-										<th scope="col">Pozione</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Facchina</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Fortunata</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Lanciatrice</td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>Runica</td>
-									</tr>
-									<tr>
-										<th scope="row">5</th>
-										<td>Segugia</td>
-									</tr>
-									<tr>
-										<th scope="row">6</th>
-										<td>Sarta</td>
-									</tr>
-								</tbody>
-							</table>
-
-						</div>
-						<div class="col-sm-4"></div>
+						<table class="table table-sm table-striped">
+							<thead>
+								<tr>
+									<th scope="col">Ricognitori</th>
+									<th scope="col">Pozione</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Facchina</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Fortunata</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Lanciatrice</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Runica</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>Segugia</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td>Sarta</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Pozioni da Combattimento</h4>
+						<p>Su alcune pozioni noterai il simbolo <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid"><br />Se presente, la pozione può essere utilizzata durante uno scontro.</p>
+						<p>Quando si utilizza una pozione da combattimento durante uno scontro, questa può essere utilizzata prima o dopo il lancio di dadi.</p>
+					</div>
+					<div class="col-sm-4">
+						<h3>Descrizione</h3>
+						<h4>
+							Acida <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid">
+						</h4>
+						<p>L’omuncolo sprigiona uno getto corrosivo con una prova nella sua caratteristica più alta e ottiene vantaggio. Può essere utilizzato per picchiare, lanciare o per interagire con l'ambiente circostante.</p>
+						<p>Se utilizzata per picchiare durante una zuffa, la pozione ha effetto su tutti i nemici presenti.</p>
+						<p>Può sciogliere un o più oggetti se il loro peso complessivo è pari alla metà della caratteristica utilizzata, arrotondata per difetto.</p>
+						<h4>
+							Brutale <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid">
+						</h4>
+						<p>L’omuncolo somma il suo punteggio in MEN a una prova di rompere oggetti.</p>
 					</div>
 				</div>
+			</div>
 
-				<hr />
+			<hr />
 
-				<div class="container d-flex flex-column">
-					<div class="row">
-						<div class="col-sm-4">
-							<h4>Pozioni: Zuffa</h4>
-							<p>
-								Se si utilizza una pozione di danno durante una zuffa, questa viene utilizzata contro tutti i nemici. Se la pozione non causa danni ma effetti specifici, si considera il singolo bersaglio. Naturalmente, come per i normali scontri, durante la zuffa si possono utilizzare solo pozioni da combattimento.
-							</p>
-						</div>
-						<div class="col-sm-4">
-							<h2>STESURA IN CORSO...</h2>
-						</div>
-						<div class="col-sm-4"></div>
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Cinquina <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid"></h4>
+						<p>
+							L’omuncolo picchia e infligge danno pari al suo punteggio in FOR. Se utilizza questa pozione durante una zuffa, l'omuncolo dovrà scegliere uno tra i nemici colpiti, il quale subirà l'effetto della pozione. Tutti gli altri subiranno danni normalmente.
+						</p>
+						<h4>Costruttrice</h4>
+						<p>Un omuncolo somma il suo punteggio in MEN a una prova di costruire.</p>
+						<h4>Facchina</h4>
+						<p>
+							L’omuncolo dimezza il peso di un oggetto. Ogni oggetto può subire solo una volta questo potere. L’effetto è permanente.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="assets/img/alchimia3.jpg" class="img-responsive center-block img-fluid" />
+					</div>
+					<div class="col-sm-4">
+						<h4>
+							Fortunata <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid">
+						</h4>
+						<p>
+							L’omuncolo, prima o dopo il lancio dei dadi, aggiunge un dado a una sua prova o alla prova di un alleato.
+						</p>
+						<h4>
+							Idrante <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid">
+						</h4>
+						<p>L’omuncolo sprigiona un potente getto d’acqua con una prova nella sua caratteristica più alta e ottiene vantaggio. Può essere utilizzato per picchiare, lanciare o per interagire con l'ambiente circostante.</p>
+						<p>Se utilizzata per picchiare durante una zuffa, la pozione ha effetto su tutti i nemici presenti.</p>
+						<p>Genera tanto peso d’acqua quanto il valore della caratteristica utilizzata.</p>
 					</div>
 				</div>
+			</div>
+
+			<hr />
+			<div class="pagebreak"></div>
+
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>
+							Incendiaria <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid">
+						</h4>
+						<p>
+							L’omuncolo evoca fiamme con una prova nella sua caratteristica più alta e ottiene vantaggio. Può essere utilizzato per picchiare, lanciare o per interagire con l'ambiente circostante.
+						</p>
+						<p>
+							Se utilizzata per picchiare durante una zuffa, la pozione ha effetto su tutti i nemici presenti.
+						</p>
+						<p>
+							Può incendiare uno o più oggetti infiammabili se hanno un peso complessivo minore o uguale al valore della caratteristica utilizzata.
+						</p>
+						<h4>Lanciatrice <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid"></h4>
+						<p>
+							L’omuncolo quando lancia un oggetto infligge, se vince la prova, danno pari al suo punteggio in AGI.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Runica</h4>
+						<p>L’omuncolo, disegnando una runa, infonde una pozione su una superficie o su un oggetto.</p>
+						<p>La pozione utilizzata può essere sua o può essere una pozione donata da un altro omuncolo per la causa. In ogni caso, deve essere una pozione da combattimento.</p>
+						<p>La pozione viene attivata su chiunque tocchi la runa. Sta al Custode stabilire, in base alla situazione, se estendere l'effetto anche ai nemici nei pressi.</p>
+					</div>
+					<div class="col-sm-4">
+						<h4>Sarta</h4>
+						<p>
+							L’omuncolo ha automaticamente successo in una prova di ricucire, sia nel caso stia tentando di ricucire se stesso, sia nel caso stia aiutando un compagno.
+						</p>
+						<h4>Scudo <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid"></h4>
+						<p>
+							L’omuncolo, prima o dopo il lancio dei dadi, applica a se stesso o ad un compagno uno scudo invisibile che assorbe tanti danni quanto il suo punteggio in MEN.
+						</p>
+						<h4>Sfigata <img src="assets/img/crossed_sword.svg" class="battlepotion img-responsive center-block img-fluid"></h4>
+						<p>
+							L’omuncolo è in grado di comandare e direzionare la sfortuna. Prima o dopo il lancio di dadi, rimuove 1 dado dalla prova di un avversario.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Sociale</h4>
+						<p>
+							L’omuncolo può parlare con un oggetto costruito. Non è detto che tale oggetto, svegliato magicamente dalla sua muta tranquillità, siano ben disposto. L'omuncolo può sempre provare a raccogliere qualche utile informazione o suggerimento. L’effetto è permanente.
+						</p>
+						<p>
+							No: ‘pavimento’ e ‘castello’ non vanno bene. Al Custode il compito di patteggiare con criterio.
+						</p>
+						<h4>Zeta</h4>
+						<p>
+							Il contenuto della pozione appartiene a un’altra mansione.
+						</p>
+						<p>
+							Il giocatore decide una qualsiasi tabella del Listone delle Pozioni e tirerà un altro dado per stabilirne il contenuto.
+						</p>
+					</div>
+					<div class="col-sm-4">
+
+
+					</div>
+					<div class="col-sm-4">
+
+					</div>
+				</div>
+			</div>
+
+			<hr />
+			<div class="pagebreak"></div>
+
+			<div class="container d-flex flex-column">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>Pozioni: Zuffa</h4>
+						<p>
+							Se si utilizza una pozione di danno durante una zuffa, questa viene utilizzata contro tutti i nemici. Se la pozione non causa danni ma effetti specifici, si considera il singolo bersaglio. Naturalmente, come per i normali scontri, durante la zuffa si possono utilizzare solo pozioni da combattimento.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h2>STESURA IN CORSO...</h2>
+					</div>
+					<div class="col-sm-4"></div>
+				</div>
+			</div>
 
 
 		</section>
