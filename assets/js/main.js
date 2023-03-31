@@ -7,6 +7,10 @@ function shareMalavoria() {
 	}
 }
 
+function callbackCounter(response) {
+    document.getElementById('root_visits').innerText = response.value;
+}
+
 
 (function() {
   "use strict";
