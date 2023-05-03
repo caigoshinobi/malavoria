@@ -2,8 +2,8 @@ const guardian = [
     "acida",
     "brutale",
     "ceffone",
+    "facchina",
     "scudo",
-    "sfigata",
     "vigore"
 ];
 
@@ -17,12 +17,12 @@ const familiar = [
 ];
 
 const scout = [
-    "facchina",
     "fortunata",
     "lanciatrice",
     "runica",
-    "segugio",
     "sartoria",
+    "segugio",
+    "sfigata",
 ];
 
 // generate button
