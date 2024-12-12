@@ -205,35 +205,16 @@
 
 			<div class="container d-flex flex-column">
 				<div class="row">
-					<div class="col-sm p-4">					
+					<div class="col-sm">					
 						<img src="assets/img/tavola_8.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
 						<h2 class="text-center">Identikit di un omuncolo</h2>
-					</div>
-
-					<div class="col-sm p-4">
-						<div class="story text-muted">
-								<p>Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...</p>
-								<p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
-								<p>“Dove dice Padrone che loro sono?”</p>
-								<p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira.”</p>
-								<p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
-								<p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
-								<p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
-								<p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
-								<p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
-								<p>“Per gli Dei...”</p>
-								<p>Urla isteriche pervadono l’oscurità.</p>
-								<footer class="blockquote-footer">Pacchero il Bardo, in ritardo</footer>
-
-						</div>
-
 					</div>
 				</div>
 			</div>
 
 			<hr>
 
-			<div class="container d-flex flex-column">
+			<div id="story-one" class="container d-flex flex-column">
 				<div class="row">
 					<div class="col-sm p-4">
 						<h3>Chi sarebbe?</h3>
@@ -250,8 +231,45 @@
 
 						<p>Durante la Cerimonia della Vita, che si tiene ogni volta che lo stregone fa pulizie di primavera, ai bordi del Minestrone si assiepano tutti gli omuncoli. Questi hanno il compito di pescare i nuovi creati con appositi rampini (chi ha le braccia per farlo ovviamente) costruiti appositamente nei secoli.</p>
 						<p>Come rituale, seppur potente, non è dei più affidabili. Soltanto pochi omuncoli ‘vengono bene’ e partecipano alla vita di corte servendo lo stregone. Tutti gli altri vengono scartati e rigettati nel Minestrone, oppure utilizzati come ascensori, fermaporta, orologi a pendolo, sedie, cestini.</p>
+
+						<!-- Button to trigger storytime modal -->
+						<button class="float-end storytime-btn" data-bs-toggle="modal" data-bs-target="#storytimeModal" aria-label="Apri menu">
+							<img src="assets/img/bookmark.svg" width="50px" height="50px"/>
+						</button>
+
+						<!-- Modal Specifico -->
+						<div class="modal fade" id="storytimeModal" tabindex="-1" aria-labelledby="storytimeModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header storytime-header">
+										<h4 class="modal-title" id="storytimeModalLabel">Storiella</h4>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body storytime-body story">
+										<p>Antar e il suo gruppo avanzano lentamente per i corridoi della torre. Spalle al muro e armi alla mano. Erano riusciti a risalire una falda sotterranea. Avevano passato due giorni in quel rigagnolo putrido per finalmente giungere ai sotterranei senza farsi scoprire. In teoria...</p>
+										<p>In pratica un gruppo di omuncoli è già operativo a dar loro la caccia, guidati dalle indicazioni dello Stregone.</p>
+										<p>“Dove dice Padrone che loro sono?”</p>
+										<p>“Zona questa lui dice. Certo che coso questo pesante. Aiuta e tira.”</p>
+										<p>Parole primitive seguite da un cigolio sinistro, come di un carro trascinato lungo la pavimentazione sconnessa.</p>
+										<p>Antar si ferma e comincia a sudare, con un cenno di mano avverte il gruppo di rimanere nell’ombra e attendere.</p>
+										<p>“Sono quei cosi lunghi? Dietro li qualcosa si mosso...”</p>
+										<p>“No vedo bene, tanto Fioccodineve vede con naso.”</p>
+										<p>Gli omuncoli fermano il carro e si occupano di aprire la gabbia trasportata. Un ruggito raggiunge l’orecchio dei condottieri. Un suono gutturale, seguito rapidamente dalla mole bestiale di un minotauro albino.</p>
+										<p>“Per gli Dei...”</p>
+										<p>Urla isteriche pervadono l’oscurità.</p>
+										<p><b>-Pacchero il Bardo, in ritardo<b></p>
+									</div>
+									<div class="modal-footer storytime-footer">
+										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
-				</div>
+
+				</div>			
 			</div>
 
 			<hr>
@@ -296,7 +314,7 @@
 
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
 									</div>
 								</div>
 							</div>
@@ -499,7 +517,7 @@
 
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
 									</div>
 								</div>
 							</div>
@@ -1170,7 +1188,7 @@
 
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
 									</div>
 								</div>
 							</div>
@@ -1706,7 +1724,7 @@
 									<div id="recycleSlogan" class="alert alert-success col-12" role="alert">
 
 									</div>
-									<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Close</button>
+									<button type="button" class="close-buttons btn btn-dark rounded-sm btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
 								</div>
 							</div>
 						</div>
@@ -1956,7 +1974,7 @@
 						<h3>Alla rovescia</h3>
 						<p>Abbiamo detto più volte in questo manuale che ci teniamo particolarmente alla fauna locale. Perché un mostro è considerato ostile? Vive nel suo habitat, mangia e procrea. Probabilmente se non lo infastidisci nemmeno si accorge della tua esistenza. Quali colpe dovrebbe avere? Essere orrendo?</p>
 						<p>Dentro di noi sappiamo chi sono le vere bestie: Mercenari al soldo dei potenti, ladri, assassini e profeti di sventura.</p>
-						<p>Il nemico è colui che incontra dei goblin selvaggi nella foresta e decide di farli secchi per puro piacere</p>
+						<p>Il nemico è colui che incontra dei goblin selvaggi nella foresta e decide di farli secchi per puro piacere.</p>
 						<p>Il nemico è quel gruppo che entra in un dungeon per cercare ricchezze, fregandosene dei proprietari. Vivi o non morti che siano.</p>
 						<p>Il nemico è il pazzo omicida che desidera gli artefatti degli altri, e che pensa "ora ammazzo il vecchio e me lo prendo, quello scudo".</p>
 					</div>
