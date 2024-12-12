@@ -99,7 +99,7 @@ h4 {
     opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 996;
+    z-index: 2;
     background: #149ddd;
     width: 40px;
     height: 40px;
@@ -257,7 +257,7 @@ h4 {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 2;
   border: 0;
   font-size: 24px;
   transition: all 0.4s;
@@ -281,6 +281,7 @@ h4 {
 .mobile-nav-active #header {
   left: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -343,7 +344,6 @@ section {
 .close-buttons {
     font-family: AmaticSC;
     font-size: 30px;
-	font-weight: bold;
 	background-color: #149ddd;
 }
 
@@ -770,8 +770,4 @@ section > .container {
     border: none;      
     padding: 10px;     
     cursor: pointer;   
-}
-
-.modal-title {
-	font-weight: bold;
 }
