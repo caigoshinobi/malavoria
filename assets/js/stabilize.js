@@ -134,11 +134,11 @@ function consolidaAspetto() {
     // Compone il risultato in formato schematizzato
     const risultato = `
         <b>Forza:</b><br>
-        ${descrizioneForza || "Nessuna parte"}<br><br>
+        <code>${descrizioneForza || "Nessuna parte"}</code><br><br>
         <b>Mente:</b><br>
-        ${descrizioneMente || "Nessuna parte"}<br><br>
+        <code>${descrizioneMente || "Nessuna parte"}</code><br><br>
         <b>Agilità:</b><br>
-        ${descrizioneAgilita || "Nessuna parte"}
+        <code>${descrizioneAgilita || "Nessuna parte"}</code>
     `;
 
     // Mostra il risultato nel modale
