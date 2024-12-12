@@ -2,13 +2,13 @@
 const descrizioni = {
     forza: {
         braccio: {
-			1: ["di legno","di funghi","scheletrico","da anfibio","da rettile"],
+			1: ["di legno","scheletrico","da anfibio","da rettile"],
             2: ["grande","argentato","muscoloso","affilato","meccanico","viscido"],
             3: ["enorme","dorato","rinforzato","artigliato","pneumatico","appiccicoso"],
             4: ["gigante","adamantino","corazzato","demoniaco","rotativo","tentacolare"]
         },
         corno: {
-			1: ["di legno", "di funghi", "di cervo"],
+			1: ["di legno","a fungo","di cervo"],
             2: ["grande","argentato","ricurvo", "meccanico", "viscido"],
             3: ["enorme","dorato","seghettato", "idraulico", "appiccicoso", "arcobaleno"],
             4: ["gigante","adamantino","demoniaco", "pneumatico", "tentacolare"]
@@ -23,8 +23,8 @@ const descrizioni = {
     mente: {
         naso: {
 			1: ["umano","nanico","adunco","da topo"],
-            2: ["grande","da cane","argentato","elegante","goblinoide"],
-            3: ["enorme","proboscide","dorato","a doppia punta","elfico"],
+            2: ["grande","da cane","argentato","goblinoide"],
+            3: ["enorme","a proboscide","dorato","elfico"],
             4: ["gigante","ultraperfetto","adamantino","arcano"]
         },
         orecchio: {
@@ -42,19 +42,19 @@ const descrizioni = {
     },
     agilita: {
         gamba: {
-			1: ["di legno","di funghi","scheletrico","da anfibio","da rettile"],
+			1: ["di legno", "scheletrica","da anfibio","da rettile"],
             2: ["grande","slanciata", "squamosa", "meccanica"],
             3: ["enorme","artigliata", "rinforzata", "tentacolare"],
             4: ["gigante","demoniaca", "draconica", "pneumatica"]
         },
         coda: {
-			1: ["di legno","di funghi","da lucertola","da topo","da cane"],
+			1: ["di legno","da pesce","da lucertola","da topo","da cane"],
             2: ["grande","argentata","spinata", "squamosa", "appuntita", "viscida"],
             3: ["enorme","dorata","rinforzata","appiccicosa", "artigliata", "arcobaleno"],
             4: ["gigante","adamantina","draconica", "demoniaca", "tentacolare"]
         },
         ala: {
-			1: ["di legno","di funghi","piumata","da pipistrello"],
+			1: ["di legno", "piumata","da pipistrello", "scheletrica"],
             2: ["grande","argentata", "artigliata", "membranosa", "meccanica"],
             3: ["enorme","dorata", "rinforzata", "squamosa", "ad elica", "arcobaleno"],
             4: ["gigante","adamantina", "draconica", "demoniaca", "a doppia elica"]
