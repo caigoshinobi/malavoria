@@ -59,6 +59,7 @@
 					<li><a href="#alchemy" class="nav-link scrollto"><i class="bx bxs-flask"></i> <span>Alchimia</span></a></li>
 					<li><a href="#keeper" class="nav-link scrollto"><i class='bx bxs-skull'></i> <span>Compendio del Custode</span></a></li>
 					<li><a href="#bestiary" class="nav-link scrollto"><i class='bx bx-ghost'></i> <span>Bestiario</span></a></li>
+					<li><a href="#gameplay" class="nav-link scrollto"><i class='bx bxs-baby-carriage'></i> <span>Esempio di Gioco</span></a></li>
 				</ul>
 			</nav><!-- .nav-menu -->
 
@@ -1550,9 +1551,9 @@
 						<h4>Ricompense</h4>
 						<p>Ogni tanto capita, strano ma vero! Gli omuncoli hanno portato a termine una missione. Perdite poche, sicuramente trascurabili rispetto all'immensa soddisfazione di aver servito al meglio il proprio padrone.</p>
 						<p>Se lo stregone è soddisfatto dell'operato degli omuncoli, li ricompenserà sottoponendoli ad un ciclo di ricarica. Tale procedimento, chiamato in gergo 'bagnetto', è un'interferenza magica che avrà molteplici benefici e si può considerare un passaggio di livello.</p>
+						<p>Ogni omuncolo come una calamita attirerà oggetti a sé, i quali ne modificheranno l'aspetto. Effettuerà una prova nella sua caratteristica di mansione:</p>
 					</div>
 					<div class="col-sm">
-						<p>Ogni omuncolo come una calamita attirerà oggetti a sé, i quali ne modificheranno l'aspetto. Effettuerà una prova nella sua caratteristica di mansione:</p>
 						<ul>
 							<li>Se non ottiene successi, tirerà 1 dado nella tabella <a href="#look" class="scrollto">Aspetto</a>, ma sulla sua caratteristica più bassa (se più caratteristiche hanno lo stesso punteggio deciderà il giocatore);</li>
 							<li>Se ottiene almeno un successo, tirerà 1 dado nella tabella <a href="#look" class="scrollto">Aspetto</a> sulla caratteristica che preferisce;</li>
@@ -1560,93 +1561,8 @@
 						</ul>
 
 						<p>Infine, durante il bagnetto ogni omuncolo può scambiare 1 parte del corpo con un altro dei presenti. Le 2 parti del corpo devono essere della stessa caratteristica.</p>
+						<p>Non abbiate paura di concedere ai vostri giocatori qualche soddisfazione. Se ad esempio si ritrovano un omuncolo con 4 braccia, concordate con loro di considerarle invece 2 braccia muscolose e sproporzionate, oppure un braccio normale da 1 e un braccio pneumatico da 3. 
 					</div>
-					
-<!-- TEST -->					
-					<div class="rows button-rows">
-						<div class="d-flex justify-content-center">
-							<button id="stabilize-look-button" type="button" class="book-buttons btn btn-outline-light d-inline-block" data-bs-toggle="modal" data-bs-target="#stabilizeLookModal">
-								Stabilizza Aspetto
-							</button>
-						</div>
-
-						<div class="modal fade" id="stabilizeLookModal" tabindex="-1" aria-labelledby="stabilizeLookModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h3 class="modal-title" id="stabilizeLookModalLabel">Stabilizza Aspetto</h3>
-									</div>
-									<div class="modal-body">
-										<p>Inserisci i dati del tuo omuncolo:</p>
-
-										<!-- Forza -->
-										<h4>Forza</h4>
-										<div class="row mb-3">
-											<div class="col">
-												<code>Braccio</code>
-												<input type="number" id="input-braccio" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Corno</code>
-												<input type="number" id="input-corno" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Bocca</code>
-												<input type="number" id="input-bocca" class="form-control" min="0" value="0">
-											</div>
-										</div>
-
-										<!-- Mente -->
-										<h4>Mente</h4>
-										<div class="row mb-3">
-											<div class="col">
-												<code>Naso</code>
-												<input type="number" id="input-naso" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Orecchio</code>
-												<input type="number" id="input-orecchio" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Occhio</code>
-												<input type="number" id="input-occhio" class="form-control" min="0" value="0">
-											</div>
-										</div>
-
-										<!-- Agilità -->
-										<h4>Agilità</h4>
-										<div class="row mb-3">
-											<div class="col">
-												<code>Gamba</code>
-												<input type="number" id="input-gamba" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Coda</code>
-												<input type="number" id="input-coda" class="form-control" min="0" value="0">
-											</div>
-											<div class="col">
-												<code>Ala</code>
-												<input type="number" id="input-ala" class="form-control" min="0" value="0">
-											</div>
-										</div>
-
-										<hr>
-										<h4>Risultato:</h4>
-										<div id="stabilized-look-result"></div>
-									</div>
-
-									<div class="modal-footer">
-										<button id="generate-description-button" type="button" class="close-buttons btn btn-dark d-inline-block btn-lg col-12">Stabilizza</button>
-										<button id="generate-description-button" type="button" class="close-buttons btn btn-dark d-inline-block btn-lg col-12" data-bs-dismiss="modal">Chiudi</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-<!-- TEST -->	
 
 				</div>
 			</div>
@@ -2281,15 +2197,14 @@
 						</table>
 					</div>
 					<div class="col-sm-4">
-						<img src="assets/img/tavola_elfodeiboschi.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
-					</div>
-					<div class="col-sm-4">
 						<h4>Incanti</h4>
 						<p><code>Segugio</code> Non si fermerà mai. Ha vantaggio nelle prove di inseguire, afferrare, spingere e lanciare contro un nemico prescelto. Deve aver visto il malcapitato almeno una volta. L'effetto è permanente. </p>
 						<p><code>Cecchino</code> Per colpire dove fa più male. Se vince una prova di lanciare, infligge danno pari al suo punteggio in AGI.</p>
 						<h4>Debolezze</h4> 
 						<p><code>Fragile</code> Se subisce 2 o più danni con un singolo attacco si rincoglionisce e perde i bonus ottenuti da segugio su tutti i nemici prescelti.</p>
-
+					</div>
+					<div class="col-sm-4">
+						<img src="assets/img/tavola_elfodeiboschi.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
 					</div>
 				</div>
 			</div>
@@ -2321,10 +2236,11 @@
 					<div class="col-sm-4">
 						<h4>Incanti</h4>
 						<p><code>Ceffone</code> Sbrocca e fa capire da subito chi comanda. Se vince la prova di picchiare, infligge danno pari al punteggio in FOR. Se utilizza questo incantesimo durante una zuffa, il berserker dovrà scegliere tra i colpiti il nemico che subirà l'effetto dell’incantesimo. Tutti gli altri subiranno danni normalmente. </p>
-					</div>
-					<div class="col-sm-4">
 						<h4>Debolezze</h4> 
 						<p><code>Sprovveduto</code> Se subisce l’effetto di un incantesimo si confonde. Il suo punteggio di FOR si abbassa di 1 permanentemente. Questo effetto non è cumulabile e dura fino a quando il berserker non riposa.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="assets/img/tavola_berserker.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
 					</div>
 				</div>
 			</div>
@@ -2358,10 +2274,11 @@
 						<p><code>Fortuna</code> Il giullare è in grado di direzionare la fortuna. Aggiunge un dado a una sua prova o alla prova di un alleato. </p>
 						<p><code>Sfiga</code> Il giullare è in grado di comandare e direzionare la sfortuna. Prima o dopo il lancio di dadi, rimuove 1 dado dalla prova di un avversario. </p>
 						<p><code>Intrattenere</code> Il giullare canta e balla, passa lo scontro a difendere e gli alleati vicini e lontani ottengono vantaggio alle prove. Può essere utilizzato anche al di fuori di uno scontro.</p>
-					</div>
-					<div class="col-sm-4">
 						<h4>Debolezze</h4> 
 						<p><code>Distratto</code> Se durante uno scontro subisce svantaggio, non sarà più in grado di <code>Intrattenere</code>. L'incanto termina e non potrà essere utilizzato fino a quando il mostro non riposa.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="assets/img/tavola_giullare.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
 					</div>
 				</div>
 			</div>
@@ -2389,21 +2306,24 @@
 								</tr>
 							</tbody>
 						</table>
+						<h4>Capacità speciale</h4> 
+						<p>Se un santone muore, risorge con 2 punti vita. Può usare questa capacità solo 1 volta tra un riposo e l’altro.</p>
 					</div>
 					<div class="col-sm-4">
 						<h4>Incanti</h4>
 						<p><code>Cura</code> Il santone passa lo scontro a difendere, cura inoltre 2 punti vita a se stesso o a un’altra creatura vicina. Può essere utilizzato anche al di fuori di uno scontro.</p>
 						<p><code>Resurrezione</code> Riporta in vita un compagno deceduto. Il compagno avrà 2 punti vita. </p>
 						<p><code>Pioggia dorata</code> Spruzza acqua santa. Può essere utilizzata per picchiare o lanciare. Se vince la prova, infligge danno pari al punteggio in MEN. Se utilizza questo incanto durante una zuffa, il Santone dovrà scegliere tra i colpiti il nemico che subirà l'effetto dell’incantesimo. Tutti gli altri subiranno tanti danni quanto il numero di successi in eccedenza. </p>
-					</div>
-					<div class="col-sm-4">
 						<h4>Debolezze</h4> 
 						<p><code>Fragile</code> Se durante uno scontro subisce 2 o piu danni con un singolo attacco non sarà in grado di utilizzare incanti fino a quando non riposa</p>
-						<h4>Capacità speciale</h4> 
-						<p>Se un santone muore, risorge con 2 punti vita. Può usare questa capacità solo 1 volta tra un riposo e l’altro.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="assets/img/tavola_santone.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
 					</div>
 				</div>
 			</div>
+			
+			<hr />
 			
 			<div id="ombraarcana" class="container d-flex flex-column p-4">
 				<div class="row">
@@ -2480,7 +2400,30 @@
 
 		<hr />
 		
+		<!-- Gameplay -->
+		<section id="gameplay">
 
+			<div class="container d-flex flex-column p-4 justify-content-center">
+				<div class="row">
+						<img src="assets/img/tavola_santone.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
+						<h2 class="text-center">Esempio di Gioco</h2>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="container d-flex flex-column p-4">
+				<div class="row">
+					<div class="col-sm">
+					</div>
+					<div class="col-sm">
+					</div>
+				</div>
+			</div>
+
+			<hr />
+		
+		</section>
 
 	</main>
 	<!-- ======= Footer ======= -->
