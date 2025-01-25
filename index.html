@@ -1106,7 +1106,7 @@
 				<div class="row">
 					<div class="col-sm">
 						<h4>Costruire: Le prove</h4>
-						<p>Ognuno (omuncolo o gruppo di omuncoli) utilizza la propria caratteristica più alta e dovrà eseguire tanti successi quanto la somma dei fattori di costruzione.</p>
+						<p>L'omuncolo utilizza la propria caratteristica più alta e dovrà eseguire tanti successi quanto la somma dei fattori di costruzione. Se il Custode lo consente, Costruire può essere una prova di gruppo</p>
 						<p>In caso di fallimento l'oggetto non viene creato, siete degli sfigati e potrete riprovare durante il riposo successivo.</p>
 
 					</div>
@@ -2394,35 +2394,130 @@
 				</div>
 			</div>
 
-			<hr />
-
 		</section>
 
 		<hr />
 		
 		<!-- Gameplay -->
 		<section id="gameplay">
-
+		
 			<div class="container d-flex flex-column p-4 justify-content-center">
 				<div class="row">
-						<img src="assets/img/tavola_santone.png" class="paintings img-fluid img-responsive mx-auto d-block"/>
-						<h2 class="text-center">Esempio di Gioco</h2>
+					<div class="col-md-6 mx-auto">
+						<h2 class="text-center">Esempi di gioco</h2>
+					</div>
 				</div>
-			</div>
-
-			<hr />
-
-			<div class="container d-flex flex-column p-4">
 				<div class="row">
-					<div class="col-sm">
-					</div>
-					<div class="col-sm">
+					<div class="col-md-6 mx-auto">
+						<input type="text" id="search-bar" class="form-control" placeholder="Cerca per tag..." onkeyup="updateDropdown()">
+						<ul id="dropdown-menu" class="list-group mt-2"></ul>
 					</div>
 				</div>
 			</div>
+			
 
-			<hr />
-		
+			  <!-- Esempio 1 -->
+			  <div id="La_rivolta_dei_minatori" class="container d-flex flex-column p-4 example" data-tags="costruire costruzione costruttrice alchimia pozione prove">
+				<div class="row">
+					<h3>La rivolta dei minatori</h3>
+					<div class="mt-2">
+					  <span class="badge bg-primary">costruzione</span>
+					  <span class="badge bg-primary">costruttrice</span>
+					  <span class="badge bg-primary">alchimia</span>
+					  <span class="badge bg-primary">pozione</span>
+					  <span class="badge bg-primary">prove</span>
+					  <p></p>
+					</div>
+				</div>
+				<div class="row">
+				  <div class="col-md">
+					<p>Malasorte vuole risolvere il problema dell’esercito di minatori che sta marciando verso la Torre di Oricalco. Questi sono poveri lavori sottopaganti e stipendiati dal sindaco della Valle e vorrebbero mettere mano su un filone di ortenzio (un raro minerale) situato proprio sulla collina che Malasorte considera proprietà privata.</p>
+					<p>Politicamente, lo stregone ha ordinato agli omuncoli di costruire 2 catapulte al più presto per placare gli animi.</p>
+					<p>Seguendo il regolamento è possibile costruire solo durante un riposo, tuttavia il Custode considera la prova fondamentale per la quest e decide di renderla disponibile. </p>
+					<code>Guaiseri</code>
+					<p><i>“Una catapulta? Ma che cazzo ne sappiamo noi di ingegneria!”</i></p>
+					<code>Zittino scrolla le spalle</code>
+					<p><i>“...”</i></p>
+				  </div>
+				  <div class="col-md">
+					<code>Disonesto</code>
+					<p><i>“Allora… assolutamente niente. Ma se non facciamo qualcosa il padrone ci dà fuoco e ci lancia giù dalla collina come l’ultima volta. Dato che è stato parecchio antipatico, direi di lavorarci su. Io in ogni caso ho una pozione Costruttrice, mai usata ma qualcosa farà.”</i></p>
+					<p>I tre omuncoli si spostano verso una delle terrazze della torre, dalla quale c’è una buona visibilità sull’intera Valle. Disonesto tira fuori la pozione Costruttrice, i giocatori chiedono al Custode di fare una prova di costruire di gruppo. Il Custode acconsente e propone il punteggio dei fattori di costruzione.</p>
+					<code>Custode</code>
+					<p><i>“Guardate, è pur sempre una catapulta: La difficoltà del progetto è 3 su 4, abbastanza complesso. Per i materiali servirà molto legno e delle corde robuste, forse delle guaine in metallo. Vi va bene una cosa piccolina o volete una catapulta regolamentare?”</i></p>
+					<code>Giocatori</code>
+					<p><i>No no, bella grossa.</i></p>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="container d-flex flex-column p-4 example" data-tags="costruzione costruttrice alchimia pozione prove">
+				<div class="row">
+				  <div class="col-md">
+					<code>Custode</code>
+					<p><i>Ok, vi do 3 punti anche qui. Al massimo vi sconto i materiali sulla seconda. La fattura sarà 2 se volete che faccia il suo lavoro, 3 se volete che duri nel tempo e che sia bella robusta.</i></p>
+					<code>Giocatori</code>
+					<p><i>“Guarda ci conviene intanto che faccia il suo lavoro”</i></p>
+					<code>Custode</code>
+					<p><i>“Materiali e fattura per ora sono a 5, quindi questa catapulta potrà fare al massimo 5 danni. Teniamo questo numero o volete qualcosa in meno?”</i></p>
+					<code>Giocatori</code>
+					<p><i>“Facciamo 4 che già siamo alti, deve scatenare il panico e basta”</i></p>
+					<code>Custode</code>
+					<p><i>“Quindi sono 3 di progetto, 3 di materiali, 2 di fattura e 4 di danni. La prova di Costruire è di 12, è una bella prova di gruppo. Ricordatevi che, da regolamento, se uno degli omuncoli non ottiene alcun successo, tutta la prova di gruppo fallirà.”</i></p>
+				  </div>
+				  <div class="col-md">
+					<p>I giocatori iniziano a tirare i dadi per la prova. Costruire dice: L'omuncolo utilizza la propria caratteristica più alta e dovrà eseguire tanti successi quanto la somma dei fattori di costruzione. Se il Custode lo consente, Costruire può essere una prova di gruppo.</p>
+					<code>Giocatore di Guaiseri</code>
+					<p>Tira in FOR e ottiene 2 successi.</p>
+					<code>Giocatore di Zittino</code>
+					<p>Tira in AGI e ottiene 2 successi.</p>
+					<code>Giocatore di Disonesto</code>					
+					<p><i>“Disonesto usa la pozione Costruttrice! Aggiungo tanti dadi alla prova quanto il mio punteggio in MEN. MEN è 5 quindi tiro 10 dadi!”</i></p>
+					<p>Lancia la secchiata di dadi e ottiene 6 successi.</p>
+					<code>Custode</code>					
+					<p><i>“Avete la vostra catapulta”</i></p>
+					<p><i>“Una delle due. Peccato che non avete più pozioni costruttrici e ve ne serve una seconda. Che fate?”</i></p>				
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- Esempio 2 -->
+			  <div id="example-2" class="container d-flex flex-column p-4 example" data-tags="narrativa esplorazione">
+					<div class="col-md-6 mx-auto">
+						<h2 class="text-center">In stesura...</h2>
+					</div>
+			  </div>
+			</div>
+
+
+		  <script>
+			function updateDropdown() {
+			  const query = document.getElementById('search-bar').value.toLowerCase();
+			  const examples = document.querySelectorAll('.example');
+			  const dropdown = document.getElementById('dropdown-menu');
+
+			  dropdown.innerHTML = '';
+
+			  examples.forEach(example => {
+				const tags = example.getAttribute('data-tags').toLowerCase();
+				const exampleId = example.id;
+
+				if (tags.includes(query) && query !== '') {
+				  const listItem = document.createElement('li');
+				  listItem.className = 'list-group-item list-group-item-action';
+				  listItem.innerHTML = `Vai a: <a href="#${exampleId}" class="text-decoration-none">${exampleId}</a>`;
+				  dropdown.appendChild(listItem);
+				}
+			  });
+
+			  if (dropdown.innerHTML === '') {
+				const noResult = document.createElement('li');
+				noResult.className = 'list-group-item list-group-item-danger';
+				noResult.innerText = 'Nessun risultato trovato';
+				dropdown.appendChild(noResult);
+			  }
+			}
+		  </script>
 		</section>
 
 	</main>
