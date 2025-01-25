@@ -34,7 +34,8 @@ generateLookButton.addEventListener('click', function () {
     const randomAgi3 = agilita[Math.floor(Math.random() * agilita.length)];
 
     document.getElementById("generateLookBody").innerHTML = `
-            <div class="col-sm">
+        <div class="row">
+			<div class="col-sm">
 				<p id="race-text"><b>Forza (FOR) [2]:</b>  <code>${randomFor1}, ${randomFor2}</code></p>
 				<p id="job-text"><b>Mente (MEN) [2]:</b>  <code>${randomMen1}, ${randomMen2}</code></p>
 				<p id="death-text"><b>Agilita (AGI) [2]:</b>  <code>${randomAgi1}, ${randomAgi2}</code></p>
@@ -45,5 +46,6 @@ generateLookButton.addEventListener('click', function () {
 				<p id="job-text"><b>Famiglio:</b>  <code>${randomMen3}</code></p>
 				<p id="death-text"><b>Ricognitore:</b>  <code>${randomAgi3}</code></p>
             </div>
+		</div>
     `;
 });
